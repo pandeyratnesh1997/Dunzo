@@ -1,4 +1,4 @@
-let obj = [{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+let Item = [{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
 Name:"Fish N Meat",
 sernmae:"Kurla West",
 kms:"1.2 km",
@@ -13,12 +13,12 @@ Name:"Clean and Fresh",
 sernmae:"Kurla",
 kms:"2.3 km",
 hour:"37 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/2e75429c-7200-4998-845e-7b4a1fcd4685-1589358067005-store_image.jpg",
 Name:"Dumpling Khang Fresh Chicken",
 sernmae:"Santacruz East",
 kms:"3.6 km",
 hour:"33 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/NStFUjVDR3k4Tmt5a2hzYXRtVVVmUT09-1603798352200-store_image.jpg",
 Name:"SFP Foods",
 sernmae:"Kurla West",
 kms:"5.3 km",
@@ -28,47 +28,47 @@ Name:"Bismillah Chicken and Fi",
 sernmae:"Chembur",
 kms:"4.2 km",
 hour:"33 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/UmVoQXkvaWxmMXJRdjJmOXFFK3Q5QT09-1641388409074-store_image.jpg",
 Name:"Xpress Mart",
 sernmae:"Santacruz East",
 kms:"3.5 km",
 hour:"26 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/c3b750a1-07ec-47ca-aacb-19bc269bc553-1619437814889-store_image.jpg",
 Name:"Bonsaro",
 sernmae:"Santacruz East",
 kms:"4.7 km",
 hour:"35 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/b0cc8924-461d-4986-bba0-33cdb8ea49a8-1604384491682-store_image.jpeg",
 Name:"Daily Sea Food",
 sernmae:"Andheri West",
 kms:"5.2 km",
 hour:"50 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/375e1357-e383-4c9e-8f1c-e28d746478b0-1641450725615-store_image.jpg",
 Name:"Nature's Basket",
 sernmae:"Bandra West",
 kms:"4.6 km",
 hour:"42 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a0J5cEk3MFlrd1hrQVVKU3FPbENlQT09-1602584575721-store_image.jpg",
 Name:"Zorabian",
 sernmae:"Chembur",
 kms:"6.3 km",
 hour:"42 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/anFLdzkxTVlrVzZTOXBJWHJLR2F1UT09-1601294819432-store_image.jpg",
 Name:"F F Enterprises",
 sernmae:"Chembur",
 kms:"6.6 km",
 hour:"34 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/US8yME4vNGtqeHVVQ1NNa1dwbVpwZz09-1623669869173-store_image.jpg",
 Name:"KGN Chicken Shop",
 sernmae:"Dharavi",
 kms:"5 km",
 hour:"46 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/190c6024-6031-4595-80a3-bfc8628b75b5-1620891881722-store_image.jpg",
 Name:"Diamond Matton Shop",
 sernmae:"Kirol Village",
 kms:"8.4 km",
 hour:"40 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/SHpQR201L0J5d3U0RFVEcldoOHd1Zz09-1619521559385-store_image.jpg",
 Name:"Licious",
 sernmae:"Chembur",
 kms:"7.8 km",
@@ -78,37 +78,37 @@ Name:"100% Jhatka Punjabi Maratha",
 sernmae:"JB Nagar",
 kms:"9.8 km",
 hour:"34 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/788ae024-0c49-4419-b846-6ad1f08775ea-1619437814555-store_image.jpg",
 Name:"Bonsaro",
 sernmae:"Chembur",
 kms:"6.7 km",
 hour:"38 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/e50abc87-5a0c-4cbd-91db-7465ecfb72aa-1641450725845-store_image.jpg",
 Name:"Nature's Basket",
 sernmae:"Grocery Vile Parle East",
 kms:"7.7 km",
 hour:"45 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/e50abc87-5a0c-4cbd-91db-7465ecfb72aa-1641450725845-store_image.jpg",
 Name:"Nature's Basket",
 sernmae:"Chembur",
 kms:"6.9 km",
 hour:"50 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/c3b750a1-07ec-47ca-aacb-19bc269bc553-1619437814889-store_image.jpg",
 Name:"Bonsaro",
 sernmae:"Chanandivali",
 kms:"7.1 km",
 hour:"41 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/fa4c52ee-a2a6-41ff-b47d-15c7d537765e-1602672305398-store_image.jpg",
 Name:"Meatsure",
 sernmae:"Chembur",
 kms:"7.9 km",
 hour:"31 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a0J5cEk3MFlrd1hrQVVKU3FPbENlQT09-1602584575721-store_image.jpg",
 Name:"Zorabin",
 sernmae:"santacruz West",
 kms:"6.2 km",
 hour:"40 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/fa4c52ee-a2a6-41ff-b47d-15c7d537765e-1602672305398-store_image.jpg",
 Name:"Meatsure",
 sernmae:"Ghatakpur",
 kms:"5.5 km",
@@ -118,7 +118,7 @@ Name:"The Cold Stirage Company",
 sernmae:"Vile Parle West",
 kms:"9.4 km",
 hour:"41 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/SE1IVHZHVmoyRit0RFR3WmVTc1YyZz09-1641388409176-store_image.jpg",
 Name:"Xpress Mart",
 sernmae:"Ghatakpur",
 kms:"5.6 km",
@@ -128,27 +128,27 @@ Name:"Metro Supermarket",
 sernmae:"Santacruz West",
 kms:"6.6 km",
 hour:"42 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/azIxNkNRSFVFM2VVL2EyVFl1R3p2dz09-1590487771019-store_image.jpg",
 Name:"DAANIA AGRO FOOD",
 sernmae:"Bandra West",
 kms:"5.9 km",
 hour:"46 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/NHRQSERSQ0J0NllqZUNYRFI4Y1dxUT09-1621852182768-store_image.jpg",
 Name:"Clean and Fresh",
 sernmae:"Powai",
 kms:"6.8 km",
 hour:"45 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/SHpQR201L0J5d3U0RFVEcldoOHd1Zz09-1619521559385-store_image.jpg",
 Name:"Licious",
 sernmae:"Maral Military Road",
 kms:"6.3 km",
 hour:"38 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/QkNmc1pyUDZHeEdNSUdGd2xpdFlaQT09-1588228196357-store_image.jpg",
 Name:"Aziz Plultry Farm",
 sernmae:"Bandra West",
 kms:"7.7 km",
 hour:"37 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/aGpYeU4wejBiMHozbmplMjFYOXdiZz09-1603217526236-store_image.jpg",
 Name:"Meatsure",
 sernmae:"Juhu",
 kms:"7 km",
@@ -158,12 +158,12 @@ Name:"Meatigo",
 sernmae:"Santacruz West",
 kms:"6.9 km",
 hour:"48 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/M21XU3BqanBlSjJyc0xqOERTU3BXQT09-1597235193583-store_image.jpg",
 Name:"Nothing But Chicken",
 sernmae:"vikhroli West",
 kms:"5.5 km",
 hour:"36 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/e50abc87-5a0c-4cbd-91db-7465ecfb72aa-1641450725845-store_image.jpg",
 Name:"Nature's Basket",
 sernmae:"Vikhroli",
 kms:"8.8 km",
@@ -178,12 +178,12 @@ Name:"Nothing But Chicken",
 sernmae:"vile Parle",
 kms:"8.9 km",
 hour:"46 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/cfea0b4d-b0ae-4e1f-bc15-07fd01eaa6d7-1641450726089-store_image.jpg",
 Name:"Nature's Basket",
 sernmae:"Bandra West",
 kms:"6.7 km",
 hour:"44 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/TXQ1MWpUZmNjNDZsYytsUTBreXVodz09-1605055791637-store_image.jpg",
 Name:"Licious",
 sernmae:"Mahim",
 kms:"7 km",
@@ -218,12 +218,12 @@ Name:"Meaty Affairs",
 sernmae:"Khar West",
 kms:"7.3 km",
 hour:"47 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/cc60052e-ba0c-4642-94d8-b758132b040a-1577453153713-store_image.jpg",
 Name:"Nothing But Chicken",
 sernmae:"Mahakali Caves Road",
 kms:"10.9 km",
 hour:"41 mins"},
-{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
+{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/e4bc6a3c-d81a-41d5-90b8-a8cb0b5930fb-1641450725131-store_image.jpg",
 Name:"Nature's Basket",
 sernmae:"Khar West",
 kms:"7.3 km",
@@ -475,5 +475,71 @@ kms:"6.7 km",
 hour:"44 mins"},]
 
 
-let item = localStorage.setItem("meats",JSON.stringify(obj))
+    // let Item = JSON.parse(localStorage.getItem("meats"))
 
+    const displayData = (Item)=>{
+    
+         Item.forEach(function(el){
+             let div = document.createElement("div")
+             div.setAttribute("id","foodbyfood")
+
+             let div2 = document.createElement("div")
+             div2.setAttribute("id","imgfood")
+
+             let img = document.createElement("img")
+             img.src = el.url;
+
+             
+             div2.append(img);
+
+             let div3 = document.createElement("div")
+             div3.setAttribute("id","foodtexts")
+
+             let h3 = document.createElement("h3")
+             h3.classList.add("namefd")
+             h3.innerHTML = el.Name;
+
+             let p = document.createElement("p")
+             p.classList.add("sernamefd");
+             p.innerText= el.sernmae;
+
+             let div4 = document.createElement("div")
+             div4.classList.add("kms");
+
+             let div5 = document.createElement("div")
+             div5.classList.add("kms1");
+
+             let p2 = document.createElement("p")
+             p2.innerText = el.kms;
+             
+             div5.append(p2);
+
+             let div6 = document.createElement("div")
+             div6.classList.add("hour")
+
+             let i = document.createElement("i");
+             i.style.marginTop  = "15px"
+             i.style.marginRight  = "10px"
+             i.innerHTML = `<i class="fa-regular fa-clock"></i>`
+            
+                         
+             let p3 = document.createElement("p")
+             p3.innerText = el.hour;
+
+             div6.append(i,p3);
+             div4.append(div5,div6);
+             div3.append(h3,p,div4)
+             div.append(div2,div3)
+      
+             document.querySelector("#allmeat").append(div)
+             
+         })
+    }
+           displayData(Item)
+
+
+
+let foodbyfood = document.getElementById("foodbyfood").value;
+foodbyfood.addEventListener("click",function(){
+     localStorage.setItem("herefood")
+})
