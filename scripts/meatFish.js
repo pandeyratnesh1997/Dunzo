@@ -540,14 +540,15 @@ hour:"44 mins"},]
 
 
 // let foodbyfood = document.getElementById("imgfood")
-// document.querySelector("#foodbyfood").addEventListener("click",function(el){
-//     showingfood(el)
-// })
+        document.querySelector("#foodbyfood").addEventListener("click",function(el){
+            // showingfood(el)
+            window.location.href = "showmeat.html"
+        })
 
-//  const showingfood =(el)=>{
-//     let foodArr = [];
-//     foodArr.push(el)
-//     console.log(el)
-//     console.log(foodArr)
-//     localStorage.setItem("fooding",JSON.stringify(Item))
-//  }
+        // const showingfood =(el)=>{
+        //     let foodArr = [];
+        //     foodArr.push(el)
+        //     console.log(el)
+        //     console.log(foodArr)
+        //     localStorage.setItem("fooding",JSON.stringify(foodArr))
+        // // }

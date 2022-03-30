@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles\navbar.css">
+    <script src="https://kit.fontawesome.com/32f181d7c4.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: Gilroy,sans-serif;
+            font-weight: 500;
+        }
+        #content-head{
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        top: 0px;
+        background: rgb(247, 253, 250);
+        }
+        #father{
+            height: 250px;
+            background: rgb(247, 253, 250);
+            
+        }
+        #father div{
+            margin: auto;
+            margin-left: 50px;
+            justify-content: center;
+          
+        }
+        #FishHome{
+            display: flex;
+            box-sizing: border-box;
+            
+        }
+        #imghome{
+            display: flex;
+            box-sizing: border-box;
+            margin: auto;
+            margin-right: 10px;
+        }
+        #imghome img{
+            height: 150px;
+            width: 150px;
+            margin-top: 20px;
+        }
+        #datas{
+            display: flex;
+            gap: 15px;
+            color: #808080;
+        }
+        #datas i{
+          margin-top: 17px;
+          color: aquamarine;
+        }
+        #datas p:first-child{
+            margin-left: -45px;
+        }
+        #datas p:last-child{
+            color: blueviolet;
+        }
+        /* for serch */
+        #search{
+            margin: auto;
+            box-sizing: border-box;
+            display: flex;
+            border-radius: 4px;
+            height: 68px;
+            background: white;
+            width: 100%;
+            border-top: 1px solid rgb(216, 216, 216);
+            border-bottom: 1px solid rgb(216, 216, 216);
+            justify-content: center;
+            
+            pointer-events: auto;
+        }
+        #put{
+            height: 40px;
+            width: 40%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- for header -->
+    <div id="menubar">
+        <div id="menuLeft">
+            <div><img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-7b2b540792556466133aea6e7c6ae513.png"></div>
+            <div class="menuTop"><select class="options"><option>Location</option></select></div>
+        </div>
+        <div id="menuRight">
+           
+            <div class="hover"><i class="fa-solid fa-cart-shopping icons"></i><p class="iconText">Cart</p></div>
+            <div class="hover"><i class="fa-regular fa-user icons"></i><p class="iconText">Profile</p></div>
+        </div>
+    </div>
+<!-- ---------------------------------------- -->
+
+<!-- for the green color div -->
+    <div id="father">
+        <div id="content-head">
+        <div id="FishHome">
+            <div id="imghome">
+       <img src="https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-220,h-220,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg" 
+        height="64px" width="64px" box-sizing = "border-box" >
+    </div>
+      
+        <div id="textc">
+            <h1 id="mt">Meat & Fish</h1>
+            <div id="datas">
+            <p>kurla west</p>
+            <i class="fa-solid fa-clock"></i>
+         
+            <p>23 mins</p>
+            
+            <p>Free Delivery</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ............................................................. -->
+    <div id="search">
+        <i class="fa-regular fa-magnifying-glass"></i>
+         <input type="search" id="put" placeholder="Search in Supermarket">
+        </div>
+</body>
+</html>
+<script>
+       
+</script>
