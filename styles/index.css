@@ -1,0 +1,169 @@
+#main {
+    background: linear-gradient(90.05deg, rgb(9, 17, 37) -2.5%, rgb(33, 61, 133) 100.83%);
+    margin-top: 75px;
+}
+#offers {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    
+}
+#offers>div>img {
+    padding-top: 5px;
+    height: 32px;
+}
+#offers>div {
+    gap: 10px;
+    display: flex;
+}
+#offers>div>a {
+    text-decoration: none;
+    padding-top: 15px;
+    color: rgb(0, 179, 122);
+}
+#content {
+    background-color: rgb(247, 253, 250);
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+#content>div {
+    width: 65%;
+    margin: auto;
+}
+.title {
+    font-size: 28px;
+    font-weight: 600;
+}
+#container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+#container>div>img {
+    width: 100%;
+    border-radius: 10px;
+}
+#container2 {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,150px);
+    gap: 15px;
+}
+#container2>div {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#container2>div>img {
+    width: 30%;
+}
+#picks {
+    padding-top: 30px;
+    width: 65%;
+    margin: auto;
+}
+#container3 {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+#container3>div>img {
+    width: 100%;
+    border-radius: 5px;
+}
+#lines {
+    padding-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+#line {
+    width: 45px;
+    height: 5px;
+    background-color: rgb(37, 211, 102);
+    border-radius: 5px;
+}
+#line2 {
+    width: 20px;
+    height: 5px;
+    background-color: rgb(37, 211, 102);
+    border-radius: 5px;
+}
+#mobileApp {
+    margin-top: 180px;
+    background-color: rgb(240,242,247);
+    padding-bottom: 12px;
+}
+#appPhoto {
+    width: 50%;
+    height: 100px;
+    justify-content: right;
+}
+#appPhoto>img {
+    width: 205px;
+}
+#app {
+    
+    height: 150px;
+    width: 43%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+#appLink {
+    display: flex;
+    gap: 15px;
+}
+#appText {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+#footer {
+    padding-top: 50px;
+    background-color: rgb(23, 30, 48);
+    color: white;
+    padding-bottom: 60px;
+}
+.para {
+    color: rgb(183, 186, 195);
+}
+#insideFooter {
+    width: 65%;
+    margin: auto;
+}
+#footerLinks {
+    padding-top: 60px;
+    margin-top: 60px;
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+#logo>img {
+    width: 70px;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.links>a {
+    color: white;
+    text-decoration: none;
+}
+.links>a:hover {
+    text-decoration: underline;
+}
+.links>p:hover {
+    cursor: default;
+}
+#scooter>img {
+    width: 260px;
+}
