@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fish&Meat....</title>
+    <link rel="stylesheet" href="styles\navbar.css">
     <script src="https://kit.fontawesome.com/32f181d7c4.js" crossorigin="anonymous"></script>
     <link rel="dns-prefetch" href="https://d2r1yp2w7bby2u.cloudfront.net">
     <style>
@@ -24,7 +25,7 @@
         #father{
             height: 250px;
             background: rgb(247, 253, 250);
-           margin-bottom: 40px;
+            margin-bottom: 40px;
             
         }
         #father div{
@@ -133,7 +134,9 @@
 
 </body>
 </html>
-<script>
+<script type="module">
+    import navbar from "./components/navbar.js";
+document.getElementById("navbar").innerHTML = navbar();
 
     let Item = [{url:"https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/a3RHOTVjUkFJb21TNEw0ZFBCQktSZz09-1589866532874-store_image.jpg",
 Name:"Fish N Meat",
