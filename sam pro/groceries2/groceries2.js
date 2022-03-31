@@ -98,18 +98,7 @@ let CovidEssentials = [
         price: "56",
         img: "https://ik.imagekit.io/dunzo/1614969862598_variant_5c021de829a128442cdc375f_1.jpg?tr=w-488,h-488,cm-pad_resize",
     }, 
-    // {
-    //     name: "Surf Excel Easywash Detergent Powder",
-    //     volume: "500 Gms",
-    //     price: "155",
-    //     img: "https://ik.imagekit.io/dunzo/1614969860568_variant_5bffffb0f07b8356278c14a6_1.jpg?tr=w-488,h-488,cm-pad_resize",
-    // },
-    //  {
-    //     name: "Vanish Oxi Action Liquid",
-    //     volume: "180 Ml",
-    //     price: "199",
-    //     img: "https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1615700527346_product_5bf85b70269a0f1dd3c38995_1.jpg",
-    // },
+  
  ];
 
     let covidEssentials = [CovidEssentials];
@@ -202,7 +191,7 @@ let CovidEssentials = [
     display(JSON.parse(localStorage.getItem('covidEssentials')));
     
 
-    function moveToCart() {
+    function moveToCart(event) {
     location.reload();
     let cart = [];
     let isThere = false;
@@ -286,7 +275,7 @@ let CovidEssentials = [
             div2.style.width = '15%'
             let btn1 = document.createElement('button');
             btn1.id = 'minus';
-            btn1.addEventListener('click',function(){
+            btn1.addEventListener('click',function(event){
                     
             let name = event.target.parentNode.parentNode.firstChild.querySelector('h3').innerText;
 
@@ -318,7 +307,7 @@ let CovidEssentials = [
 
                 let btn2 = document.createElement('button');
                 btn2.id = 'plus';
-                btn2.addEventListener('click',function(){
+                btn2.addEventListener('click',function(event){
                   
                 let name = event.target.parentNode.parentNode.firstChild.querySelector('h3').innerText;
 
