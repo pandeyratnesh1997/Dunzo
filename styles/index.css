@@ -1,3 +1,171 @@
+#signin>button {
+    padding: 8px 20px;
+    background-color: rgb(0, 210, 144);
+    color: white;
+    border: 1px solid rgb(0, 210, 144);
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* OTP */
+#checkOTP {
+    margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+    gap: 20px;
+}
+#checkOTP>input {
+    padding: 15px;
+    width: 3%;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid rgb(225, 227, 234);
+}
+#count {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    color: rgb(111, 117, 136);
+}
+#count>div:first-child {
+    font-weight: bold;
+}
+#countdown {
+    display: flex;
+    
+}
+
+#signup {
+    margin-top: 75px;
+    width: 100%;
+    height: 100%;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#signup>div {
+    margin-top: 75px;
+}
+#signup2 {
+    padding: 20px;
+    width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin: auto;
+}
+#signup2>div> {
+    color: rgb(111, 117, 136);
+}
+#heading1 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+#heading2 {
+    margin-top: 5px;
+}
+.mandatory {
+    margin-top: 25px;
+    display: flex;
+    gap: 5px;
+}
+#input {
+    margin-top: 10px;
+}
+#input>i {
+    padding-left: 20px;
+    padding-top: 18px;
+    position: absolute;
+    color: rgb(111, 117, 136);
+}
+#input>p {
+    position: absolute;
+    padding-left: 50px;
+    color: rgb(111, 117, 136);
+}
+#phone {
+    padding: 15px 10px 15px 90px;
+    width: 345px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid rgb(225, 227, 234);
+}
+#phone:focus {
+    border: 1px solid rgb(0, 179, 122);
+}
+.grey {
+    color: rgb(111, 117, 136);
+}
+.red {
+    color: red;
+}
+
+#signup2>div>img {
+    width: 56px;
+}
+#check {
+    display: flex;
+    gap: 5px;
+}
+#checkbox {
+    margin-top: 50px;
+    fill: rgb(255, 255, 255);
+    stroke: rgb(201, 205, 216);
+    cursor: pointer;
+    font-weight: 500;
+}
+#check>p {
+    margin-top: 47px;
+}
+#check>p>a {
+    color: rgb(0, 179, 122);
+    text-decoration: none;
+}
+#otp {
+    margin-top: 30px;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(225, 227, 234);
+    color: white;
+    border: 1px solid rgb(225, 227, 234);
+    border-radius: 30px;
+}
+#verify {
+    margin-top: 30px;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(225, 227, 234);
+    color: white;
+    border: 1px solid rgb(225, 227, 234);
+    border-radius: 30px;
+}
+#close {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+#close:hover,
+#close:focus {
+  cursor: pointer;
+}
+
+
+
 #main {
     background: linear-gradient(90.05deg, rgb(9, 17, 37) -2.5%, rgb(33, 61, 133) 100.83%);
     margin-top: 75px;

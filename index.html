@@ -10,7 +10,50 @@
     <link rel="stylesheet" href="styles\index.css">
 </head>
 <body>
-    <div id="navbar"></div>
+    <div id="navbar">
+        <div id="menubar">
+            <div id="menuLeft">
+                <div><img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-7b2b540792556466133aea6e7c6ae513.png"></div>
+                <div class="menuTop"><select class="options"><option>Location</option></select></div>
+            </div>
+            <div id="menuRight">
+                <div class="menuTop hover"><a href="">Dunzo for Partners</a></div>
+                <div class="menuTop hover"><select class="options hover"><option>Business with Dunzo</option></select></div>
+                <div id="search" class="hover"><i class="fa-solid fa-magnifying-glass icons"></i><p class="iconText">Search</p></div>
+                <div id="cart" class="hover"><i class="fa-solid fa-cart-shopping icons"></i><p class="iconText">Cart</p></div>
+                <div id="signin" class="hover"><button>Sign in</button></div>
+            </div>
+        </div>
+    </div>
+    <div id="signup">
+        <div>
+            <div id="signup2">
+                <div>
+                    <i id="close" class="fa-regular fa-xmark"></i>
+                    <img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/signin-icon-9f407f043f3dd9a44fcf83fc92d9bfaf.png">
+                    <div id="heading1">Sign in</div>
+                    <div id="heading2" class="grey">Get started with Dunzo</div>
+                    <div class="mandatory">
+                        <div class="red">*</div>
+                        <div class="grey">Enter your phone number</div>
+                    </div>
+                    
+                    <div id="input">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+91</p>
+                        <input id="phone" type="tel" placeholder="Phone number">
+                    </div>
+                    <div id="check">
+                        <input id="checkbox" type="checkbox">
+                        <p>I accept the Terms of Use & Privacy Policy | <a href="">View T&C ></a></p>
+                    </div>
+                    <div id="check2"></div>
+                    <div id="btn"><button id="otp">Send OTP</button></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="main">
         <div id="offers">
             <div>
@@ -125,6 +168,80 @@
 </body>
 </html>
 <script type="module">
-    import navbar from "./components/navbar.js";
-document.getElementById("navbar").innerHTML = navbar();
+    import showOTP from './components/signup.js';
+
+    let signin = document.getElementById("signin");
+
+    let signup = document.getElementById("signup");
+
+    signin.onclick = function(){
+        signup.style.display = "block";
+    }
+
+    let close = document.getElementById("close");
+    
+    close.onclick = function(){
+        signup.style.display = "none";
+    }
+
+    
+    let checkbox = document.getElementById("checkbox");
+    checkbox.onchange = function(){
+        let otp = document.getElementById("otp");
+    
+        let phone = document.getElementById("phone");
+        if(phone.value.length==10 && checkbox.checked){
+            otp.style.background = "rgb(0, 210, 144)";
+            otp.onclick = function(){
+                phone.disabled = true;
+                otp.style.background = "rgb(225, 227, 234)";
+
+                let check = document.getElementById("check");
+                check.innerHTML = "";
+                let check2 = document.getElementById("check2");
+                check2.innerHTML = showOTP();
+
+                let timer = document.getElementById("timer");
+                let i = 30;
+                let intervalID = setInterval(function(){
+                    if(i===0){
+                        clearInterval(intervalID);
+                    }
+                    i--;
+                    timer.innerText = i;
+                },1000);
+
+                
+
+                otp.innerHTML = `<button id="verify">Verify and continue</button>`;
+
+                
+                
+            }
+        }
+    }
+
+    
+    let verify = document.getElementById("verify");
+    if(otp1==1 && otp2==2 && otp3==3 && otp4==4 && otp5==5 && otp6==6){
+        verify.style.background = "rgb(0, 210, 144)";
+        verify.onclick = function(){
+            let otp1 = document.getElementById("otp1").value;
+            let otp2 = document.getElementById("otp2").value;
+            let otp3 = document.getElementById("otp3").value;
+            let otp4 = document.getElementById("otp4").value;
+            let otp5 = document.getElementById("otp5").value;
+            let otp6 = document.getElementById("otp6").value;
+
+            let userDetails = JSON.parse(localStorage.getItem("userDetails")) || [];
+            let obj = {phone : phone.value};
+            userDetails.push(obj);
+            localStorage.setItem("userDetails", JSON.stringify(userDetails));
+            signin.innerHTML = `<div id="profile" class="hover"><i class="fa-regular fa-user icons"></i><p class="iconText">Profile</p></div>`;
+            signup.style.display = "none";
+        }
+    }
+    
+    
 </script>
+<script src="scripts\index.js"></script>
