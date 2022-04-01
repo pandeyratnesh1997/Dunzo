@@ -13,8 +13,12 @@
     <div id="navbar">
         <div id="menubar">
             <div id="menuLeft">
-                <div><img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-7b2b540792556466133aea6e7c6ae513.png"></div>
-                <div class="menuTop"><i class="fa-solid fa-location-dot green"></i><select class="options"><option>Location</option></select></div>
+                <div><a href="index.html"><img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-7b2b540792556466133aea6e7c6ae513.png"></a></div>
+                <div class="menuTop">
+                    <i class="fa-solid fa-location-dot green"></i>
+                    <select class="options">
+                        <option>Mumbai</option>
+                    </select></div>
             </div>
             <div id="menuRight">
                 <div class="menuTop hover"><a href="https://www.dunzo.com/partner">Dunzo for Partners</a></div>
@@ -27,7 +31,7 @@
                 </div>
                 <div id="search" class="hover"><i class="fa-solid fa-magnifying-glass icons"></i><p class="iconText">Search</p></div>
                 <div id="cart" class="hover"><i class="fa-solid fa-cart-shopping icons"></i><p class="iconText">Cart</p></div>
-                <div id="signin" class="hover"><button>Sign in</button></div>
+                <div id="signin" class="hover"><button id="signinBtn">Sign in</button></div>
             </div>
         </div>
     </div>
@@ -177,10 +181,11 @@
     import showOTP from './components/signup.js';
 
     let signin = document.getElementById("signin");
+    let signinBtn = document.getElementById("signinBtn");
 
     let signup = document.getElementById("signup");
 
-    signin.onclick = function(){
+    signinBtn.onclick = function(){
         signup.style.display = "block";
     }
 
@@ -197,11 +202,12 @@
     
         let phone = document.getElementById("phone");
         if(phone.value.length==10 && checkbox.checked){
+
             otp.style.background = "rgb(0, 210, 144)";
+
             otp.onclick = function(){
                 phone.disabled = true;
-                
-                btn.innerHTML = "";
+                let btn = document.getElementById("btn");
 
                 btn.innerHTML = `<button id="verify">Verify and continue</button>`;
 
@@ -241,12 +247,22 @@
                     localStorage.setItem("userDetails", JSON.stringify(userDetails));
                     signin.innerHTML = `<div id="profile" class="hover"><i class="fa-regular fa-user icons"></i><p class="iconText">Profile</p></div>`;
                     signup.style.display = "none";
+                    let profile = document.getElementById("profile");
+                    profile.onclick = function(){
+                        window.location.href = "profile.html";
+                    }
                 }
             }
         }
     }
-
-    
+    let user = JSON.parse(localStorage.getItem("userDetails")) || [];
+    if(user.length!=0){
+        signin.innerHTML = `<div id="profile" class="hover"><i class="fa-regular fa-user icons"></i><p class="iconText">Profile</p></div>`;
+    }
+    let profile = document.getElementById("profile");
+    profile.onclick = function(){
+        window.location.href = "profile.html";
+    }
     
     
     

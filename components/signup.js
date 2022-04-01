@@ -4,12 +4,12 @@ function showOTP(){
     <div class="grey">Enter the OTP</div>
 </div>
 <div id="checkOTP">
-    <input id="otp1" type="password">
-    <input id="otp2" type="password">
-    <input id="otp3" type="password">
-    <input id="otp4" type="password">
-    <input id="otp5" type="password">
-    <input id="otp6" type="password">
+    <input id="otp1" type="tel">
+    <input id="otp2" type="tel">
+    <input id="otp3" type="tel">
+    <input id="otp4" type="tel">
+    <input id="otp5" type="tel">
+    <input id="otp6" type="tel">
 </div>
 <div id="count">
     <div>Resend</div>
