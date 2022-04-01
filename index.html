@@ -194,7 +194,10 @@
             otp.style.background = "rgb(0, 210, 144)";
             otp.onclick = function(){
                 phone.disabled = true;
-                otp.style.background = "rgb(225, 227, 234)";
+                
+                btn.innerHTML = "";
+
+                btn.innerHTML = `<button id="verify">Verify and continue</button>`;
 
                 let check = document.getElementById("check");
                 check.innerHTML = "";
@@ -210,38 +213,32 @@
                     i--;
                     timer.innerText = i;
                 },1000);
-
-                
-
-                otp.innerHTML = `<button id="verify">Verify and continue</button>`;
-
-                
-                
             }
         }
     }
 
+    let otp1 = document.getElementById("otp1").value;
+    let otp2 = document.getElementById("otp2").value;
+    let otp3 = document.getElementById("otp3").value;
+    let otp4 = document.getElementById("otp4").value;
+    let otp5 = document.getElementById("otp5").value;
+    let otp6 = document.getElementById("otp6").value;
     
     let verify = document.getElementById("verify");
     if(otp1==1 && otp2==2 && otp3==3 && otp4==4 && otp5==5 && otp6==6){
         verify.style.background = "rgb(0, 210, 144)";
-        verify.onclick = function(){
-            let otp1 = document.getElementById("otp1").value;
-            let otp2 = document.getElementById("otp2").value;
-            let otp3 = document.getElementById("otp3").value;
-            let otp4 = document.getElementById("otp4").value;
-            let otp5 = document.getElementById("otp5").value;
-            let otp6 = document.getElementById("otp6").value;
-
-            let userDetails = JSON.parse(localStorage.getItem("userDetails")) || [];
-            let obj = {phone : phone.value};
-            userDetails.push(obj);
-            localStorage.setItem("userDetails", JSON.stringify(userDetails));
-            signin.innerHTML = `<div id="profile" class="hover"><i class="fa-regular fa-user icons"></i><p class="iconText">Profile</p></div>`;
-            signup.style.display = "none";
-        }
+        
     }
-    
+    verify.onclick = function(){
+        
+
+        let userDetails = JSON.parse(localStorage.getItem("userDetails")) || [];
+        let obj = {phone : phone.value};
+        userDetails.push(obj);
+        localStorage.setItem("userDetails", JSON.stringify(userDetails));
+        signin.innerHTML = `<div id="profile" class="hover"><i class="fa-regular fa-user icons"></i><p class="iconText">Profile</p></div>`;
+        signup.style.display = "none";
+    }
     
 </script>
 <script src="scripts\index.js"></script>
