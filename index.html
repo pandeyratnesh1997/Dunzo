@@ -247,10 +247,6 @@
                     localStorage.setItem("userDetails", JSON.stringify(userDetails));
                     signin.innerHTML = `<div id="profile" class="hover"><i class="fa-regular fa-user icons"></i><p class="iconText">Profile</p></div>`;
                     signup.style.display = "none";
-                    let profile = document.getElementById("profile");
-                    profile.onclick = function(){
-                        window.location.href = "profile.html";
-                    }
                 }
             }
         }
@@ -258,11 +254,12 @@
     let user = JSON.parse(localStorage.getItem("userDetails")) || [];
     if(user.length!=0){
         signin.innerHTML = `<div id="profile" class="hover"><i class="fa-regular fa-user icons"></i><p class="iconText">Profile</p></div>`;
+        let profile = document.getElementById("profile");
+            profile.onclick = function(){
+                window.location.href = "profile.html";
+            }
     }
-    let profile = document.getElementById("profile");
-    profile.onclick = function(){
-        window.location.href = "profile.html";
-    }
+    
     
     
     
