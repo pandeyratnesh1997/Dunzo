@@ -6,7 +6,7 @@ function panShop(name,address,distance,image){
     this.distance=distance;
     this.image=image;
 }
-let p1 = new panShop("Krishna Cigarette Corner","Marol Military Road","0.8KM","https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/VkhWK3pPRVhqYmZzalF2SnlzSEczUT09-1577703419915-store_image.jpg")
+let p1 = new panShop("Shree Ganesh Store","Andheri East","0.8KM","https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/VkhWK3pPRVhqYmZzalF2SnlzSEczUT09-1577703419915-store_image.jpg")
 pan_Data.push(p1);
 
 let p2 = new panShop("Maharashtra Paan Bidi Shop","Marol Military Road","0.9KM","https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/81fc52dd-cb65-4d6d-b0a1-ad579cdc2d69-1565269361029-store_image.jpg")
@@ -41,6 +41,12 @@ pan_Data.push(p11);
 
 let p12 = new panShop("Patel Super Market","Andheri West","12.7KM","https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/194aecb2-3f31-4c2a-a45e-13e9a9d028a0-1596093301315-store_image.jpeg")
 pan_Data.push(p12);
+
+let p13 = new panShop("Krishna Cigarette Corner","Marol Military Road","0.8KM","https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/VkhWK3pPRVhqYmZzalF2SnlzSEczUT09-1577703419915-store_image.jpg")
+pan_Data.push(p13);
+
+let p14 = new panShop("Vishal store","Malad West","15.8KM","https://ik.imagekit.io/dunzo/dunzo-catalog-prod/tr:w-250,h-250,cm-pad_resize_store_thumbnail/stores/d9d7da7f-09d5-4b2f-801b-9a5a030b0ea7-1624612957635-store_image.jpg")
+pan_Data.push(p14);
 
 localStorage.setItem("panstore",JSON.stringify(pan_Data));
 console.log(pan_Data);
