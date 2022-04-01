@@ -11,6 +11,9 @@ body {
     width: 100%;
     top: 0;
 }
+.green {
+    color: rgb(0,179,122);
+}
 #menubar {
     width: 65%;
     display: flex;
