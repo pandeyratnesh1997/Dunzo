@@ -98,7 +98,18 @@ let CovidEssentials = [
         price: "56",
         img: "https://ik.imagekit.io/dunzo/1614969862598_variant_5c021de829a128442cdc375f_1.jpg?tr=w-488,h-488,cm-pad_resize",
     }, 
-  
+    // {
+    //     name: "Surf Excel Easywash Detergent Powder",
+    //     volume: "500 Gms",
+    //     price: "155",
+    //     img: "https://ik.imagekit.io/dunzo/1614969860568_variant_5bffffb0f07b8356278c14a6_1.jpg?tr=w-488,h-488,cm-pad_resize",
+    // },
+    //  {
+    //     name: "Vanish Oxi Action Liquid",
+    //     volume: "180 Ml",
+    //     price: "199",
+    //     img: "https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1615700527346_product_5bf85b70269a0f1dd3c38995_1.jpg",
+    // },
  ];
 
     let covidEssentials = [CovidEssentials];
@@ -191,7 +202,7 @@ let CovidEssentials = [
     display(JSON.parse(localStorage.getItem('covidEssentials')));
     
 
-    function moveToCart(event) {
+    function moveToCart() {
     location.reload();
     let cart = [];
     let isThere = false;
@@ -275,7 +286,7 @@ let CovidEssentials = [
             div2.style.width = '15%'
             let btn1 = document.createElement('button');
             btn1.id = 'minus';
-            btn1.addEventListener('click',function(event){
+            btn1.addEventListener('click',function(){
                     
             let name = event.target.parentNode.parentNode.firstChild.querySelector('h3').innerText;
 
@@ -307,7 +318,7 @@ let CovidEssentials = [
 
                 let btn2 = document.createElement('button');
                 btn2.id = 'plus';
-                btn2.addEventListener('click',function(event){
+                btn2.addEventListener('click',function(){
                   
                 let name = event.target.parentNode.parentNode.firstChild.querySelector('h3').innerText;
 
@@ -349,7 +360,7 @@ let CovidEssentials = [
                 checkout_btn.innerText = `checkout ₹${total_price}`;
                 checkout_btn.setAttribute("class","checkout")
                 checkout_btn.addEventListener('click',function(){
-                    window.location.href = "../paymentpagepath/pay.html";
+                    window.location.href = "../DUNZOproject/manage-payment.html";
                 });
                 div4.append(checkout_btn);
 

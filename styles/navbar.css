@@ -11,6 +11,9 @@ body {
     width: 100%;
     top: 0;
 }
+.green {
+    color: rgb(0,179,122);
+}
 #menubar {
     width: 65%;
     display: flex;
@@ -25,6 +28,7 @@ body {
 .options {
     border: 0px solid black;
     font-size: 14px;
+    cursor: pointer;
 }
 .icons {
     font-size: 20px;
@@ -32,9 +36,10 @@ body {
 .iconText {
     font-size: 12px;
 }
-#menuLeft>div>img {
+#menuLeft>div>a>img {
     padding-top: 5px;
     width: 120px;
+    cursor: pointer;
 }
 #menuRight>div {
     text-align: center;
@@ -48,8 +53,10 @@ body {
 }
 .hover>a:hover {
     color: rgb(0, 179, 122);
+    cursor: pointer;
 }
 .hover:hover {
     color: rgb(0, 179, 122);
+    cursor: pointer;
 }
 /* Header End */

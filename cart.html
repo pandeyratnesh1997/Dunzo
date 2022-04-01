@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/32f181d7c4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles\navbar.css">
+    <link rel="stylesheet" href="styles\cart.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="navbar">
+        <div id="menubar">
+            <div id="menuLeft">
+                <div><img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-7b2b540792556466133aea6e7c6ae513.png"></div>
+            </div>
+            <div id="menuRight">
+                <div id="profile" class="hover"><i class="fa-regular fa-user icons"></i><p class="iconText">Profile</p></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="cartEmpty">
+            <img src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png">
+            <p class="line1">Your cart is waiting to be filled</p>
+            <p class="line2">Make your task list and Dunzo it now!</p>
+            <a href="index.html"><button class="grnbtn">Start Shopping</button></a>
+        </div>
+    </div>
 </body>
 </html>
-<script type="module">
-    import navbar from "./components/navbar.js";
-    document.getElementById("navbar").innerHTML = navbar();
-</script>

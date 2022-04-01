@@ -10,21 +10,74 @@
     <link rel="stylesheet" href="styles\index.css">
 </head>
 <body>
-    <div id="navbar"></div>
+    <div id="navbar">
+        <div id="menubar">
+            <div id="menuLeft">
+                <div><a href="index.html"><img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-7b2b540792556466133aea6e7c6ae513.png"></a></div>
+                <div class="menuTop">
+                    <i class="fa-solid fa-location-dot green"></i>
+                    <select class="options">
+                        <option>Mumbai</option>
+                    </select></div>
+            </div>
+            <div id="menuRight">
+                <div class="menuTop hover"><a href="https://www.dunzo.com/partner">Dunzo for Partners</a></div>
+                <div class="menuTop hover">
+                    <select class="options hover">
+                        <option>Business with Dunzo</option>
+                        <option><a href="https://www.dunzo.com/business">Need delivery partners?</a></option>
+                        <option><a href="">Sell products on Dunzo</a></option>
+                    </select>
+                </div>
+                <div id="search" class="hover"><i class="fa-solid fa-magnifying-glass icons"></i><p class="iconText">Search</p></div>
+                <div id="cart" class="hover"><i class="fa-solid fa-cart-shopping icons"></i><p class="iconText">Cart</p></div>
+                <div id="signin" class="hover"><button id="signinBtn">Sign in</button></div>
+            </div>
+        </div>
+    </div>
+    <div id="signup">
+        <div>
+            <div id="signup2">
+                <div>
+                    <i id="close" class="fa-regular fa-xmark"></i>
+                    <img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/signin-icon-9f407f043f3dd9a44fcf83fc92d9bfaf.png">
+                    <div id="heading1">Sign in</div>
+                    <div id="heading2" class="grey">Get started with Dunzo</div>
+                    <div class="mandatory">
+                        <div class="red">*</div>
+                        <div class="grey">Enter your phone number</div>
+                    </div>
+                    
+                    <div id="input">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+91</p>
+                        <input id="phone" type="tel" placeholder="Phone number">
+                    </div>
+                    <div id="check">
+                        <input id="checkbox" type="checkbox">
+                        <p>I accept the Terms of Use & Privacy Policy | <a href="">View T&C ></a></p>
+                    </div>
+                    <div id="check2"></div>
+                    <div id="btn"><button id="otp">Send OTP</button></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="main">
         <div id="offers">
             <div>
                 <img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/paan-3514c1ca4be5af789addd127f4c24308.png">
                 <p>Order Paan items, munchies and much more on our new Dunzo Mo app</p>
             </div>
-            <div><a href="">Download Dunzo Mo app now ></a></div>
+            <div><a href="https://www.dunzo.com/dunzo-mo">Download Dunzo Mo app now ></a></div>
         </div>
     </div>
     <div id="content">
         <div>
             <div><p class="title">Essentials delivered to your doorstep</p></div>
             <div id="container">
-                <div><img src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/operator-FFWUCfzmUzhok89HMYt0ON2Gy5oZECO73gRenPw11HxAeCLBtTBOG8FMqMTe92UOnScOPMUnjYDcaPVxx7wSFJwXJ3kSR3YRsPby4EgC4zW2mVYLc99zuvVh7O2Ppmx2QMQd40UiwYLGhy0OjbMayr.png"></div>
+                <div><a href="groceries.html"><img class="sunny" src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/operator-FFWUCfzmUzhok89HMYt0ON2Gy5oZECO73gRenPw11HxAeCLBtTBOG8FMqMTe92UOnScOPMUnjYDcaPVxx7wSFJwXJ3kSR3YRsPby4EgC4zW2mVYLc99zuvVh7O2Ppmx2QMQd40UiwYLGhy0OjbMayr.png"></a></div>
                 <div><img src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/dunzo/icons/newHome/promoBanner/kitImageUrl/largeIcons/default_pnd_secondary2_1613527381240.png"></div>
                 <div><img src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/operator-ABHxCyRo8CLcEMC0YE43zsmH2XHFv3xr6B8Y3tIdBpKE1NBAjyHS4vgJY3T3z8AEascTap9OETFY0CdvpHj70KZSGFNrCxkFVtUugsMRkyV5jVk9XHl164PCPop56VNkdpLhfymH86JkFjMlYYgQHK.jpg"></div>
                 <div><img src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/dunzo/icons/newHome/promoBanner/kitImageUrl/largeIcons/default_fnv_secondary2_1613527515094.png"></div>
@@ -125,6 +178,90 @@
 </body>
 </html>
 <script type="module">
-    import navbar from "./components/navbar.js";
-document.getElementById("navbar").innerHTML = navbar();
+    import showOTP from './components/signup.js';
+
+    let signin = document.getElementById("signin");
+    let signinBtn = document.getElementById("signinBtn");
+
+    let signup = document.getElementById("signup");
+
+    signinBtn.onclick = function(){
+        signup.style.display = "block";
+    }
+
+    let close = document.getElementById("close");
+    
+    close.onclick = function(){
+        signup.style.display = "none";
+    }
+
+    
+    let checkbox = document.getElementById("checkbox");
+    checkbox.onchange = function(){
+        let otp = document.getElementById("otp");
+    
+        let phone = document.getElementById("phone");
+        if(phone.value.length==10 && checkbox.checked){
+
+            otp.style.background = "rgb(0, 210, 144)";
+
+            otp.onclick = function(){
+                phone.disabled = true;
+                let btn = document.getElementById("btn");
+
+                btn.innerHTML = `<button id="verify">Verify and continue</button>`;
+
+                let check = document.getElementById("check");
+                check.innerHTML = "";
+                let check2 = document.getElementById("check2");
+                check2.innerHTML = showOTP();
+
+                let timer = document.getElementById("timer");
+                let i = 30;
+                let intervalID = setInterval(function(){
+                    if(i===0){
+                        clearInterval(intervalID);
+                    }
+                    i--;
+                    timer.innerText = i;
+                },1000);
+
+                let otp1 = document.getElementById("otp1");
+                let otp2 = document.getElementById("otp2");
+                let otp3 = document.getElementById("otp3");
+                let otp4 = document.getElementById("otp4");
+                let otp5 = document.getElementById("otp5");
+                let otp6 = document.getElementById("otp6");
+                
+                let verify = document.getElementById("verify");
+                otp6.oninput = function(){
+                    if(otp1.value==1 && otp2.value==2 && otp3.value==3 && otp4.value==4 && otp5.value==5 && otp6.value==6){
+                        verify.style.background = "rgb(0, 210, 144)";
+                    }
+                }
+
+                verify.onclick = function(){
+                    let userDetails = JSON.parse(localStorage.getItem("userDetails")) || [];
+                    let obj = {phone : phone.value};
+                    userDetails.push(obj);
+                    localStorage.setItem("userDetails", JSON.stringify(userDetails));
+                    signin.innerHTML = `<div id="profile" class="hover"><i class="fa-regular fa-user icons"></i><p class="iconText">Profile</p></div>`;
+                    signup.style.display = "none";
+                }
+            }
+        }
+    }
+    let user = JSON.parse(localStorage.getItem("userDetails")) || [];
+    if(user.length!=0){
+        signin.innerHTML = `<div id="profile" class="hover"><i class="fa-regular fa-user icons"></i><p class="iconText">Profile</p></div>`;
+        let profile = document.getElementById("profile");
+            profile.onclick = function(){
+                window.location.href = "profile.html";
+            }
+    }
+    
+    
+    
+    
 </script>
+<script src="scripts\index.js"></script>
