@@ -110,6 +110,18 @@ let CovidEssentials = [
          price: "165",
          img: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Gold_Flake.JPG",
      },
+     {
+        name: "Magai paan Hookah Flavour",
+        volume: "50 GMS",
+        price: "100",
+        img: "https://ik.imagekit.io/dunzo/home/icons/home/dunzodaily/Paan_SKU_4x.png?tr=w-144,h-144,cm-pad_resize",
+    },
+    {
+        name: "Malboro Red (Hard)",
+        volume: "Pack of 20",
+        price: "330",
+        img: "https://ik.imagekit.io/dunzo/home/icons/home/dunzodaily/Paan_SKU_4x.png?tr=w-144,h-144,cm-pad_resize",
+    },
  ];
 
     let covidEssentials = [CovidEssentials];
