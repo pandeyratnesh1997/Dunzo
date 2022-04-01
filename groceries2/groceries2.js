@@ -360,7 +360,7 @@ let CovidEssentials = [
                 checkout_btn.innerText = `checkout ₹${total_price}`;
                 checkout_btn.setAttribute("class","checkout")
                 checkout_btn.addEventListener('click',function(){
-                    window.location.href = "../paymentpagepath/pay.html";
+                    window.location.href = "../DUNZOproject/manage-payment.html";
                 });
                 div4.append(checkout_btn);
 
