@@ -1,14 +1,5 @@
 function sidebar(){
     return `
-    <div class="topbar">
-        <a id="logo" href="#">
-            <img  src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-7b2b540792556466133aea6e7c6ae513.png">
-        </a>
-        <a id="cartlogo" href="#">
-            <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQheZIJc9GZARBjpqmTqs8Kcx0XwUu2CB5b7g&usqp=CAU">
-        </a>
-       
-    </div>
     <div id="contTop">
         <div class="topDiv">
             <h1>hey There!</h1>
