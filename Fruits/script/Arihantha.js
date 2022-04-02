@@ -8,44 +8,44 @@ let before_div = 0;
         name: "Papaya, Pineapple, Pomegranate"
     },
 
-    // {
-    //     name:'Pineapple',
-    //     image:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844136632_product_5c80d9cbd8b2f755a2d44052_1.jpg',
-    //     volume:'1 PC',
-    //     price: 135, 
-    // },
+    {
+        name:'Pineapple',
+        image:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844136632_product_5c80d9cbd8b2f755a2d44052_1.jpg',
+        volume:'1 PC',
+        price: 135, 
+    },
 
-    // {
-    //     name:"Papaya - Raw",
-    //     image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844136698_product_5c80d9cbd8b2f755a2d4406b_1.jpg",
-    //     volume:"1 KG",
-    //     price: 65, 
-    // },
+    {
+        name:"Papaya - Raw",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844136698_product_5c80d9cbd8b2f755a2d4406b_1.jpg",
+        volume:"1 KG",
+        price: 65, 
+    },
 
-    // {
-    //     name:"Papaya",
-    //     image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844010855_product_5caef825de0f3b0443a7d9d7_1.jpg",
-    //     volume:"1 KG",
-    //     price: 58 , 
-    // },
+    {
+        name:"Papaya",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844010855_product_5caef825de0f3b0443a7d9d7_1.jpg",
+        volume:"1 KG",
+        price: 58 , 
+    },
 
     {
         name:"Peeled Pomegranate",
-        img:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844013548_product_5d40054847ddec28ec55ba98_1.jpg",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844013548_product_5d40054847ddec28ec55ba98_1.jpg",
         volume:"500 GMS",
         price: 85, 
     },
 
     {
         name:"Big Pomegranate",
-        img:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/M084Mk1iNVIyK3JRMC83bVh0ZjhWQT09-product_image.jpg",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/M084Mk1iNVIyK3JRMC83bVh0ZjhWQT09-product_image.jpg",
         volume:"1 KG",
         price: 279, 
     },
 
     {
         name:"Pomegrante",
-        img:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844133820_product_5c0e70078d92d07fdfc24835_1.jpg",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844133820_product_5c0e70078d92d07fdfc24835_1.jpg",
         volume:"1 KG",
         price: 240, 
     },
@@ -61,14 +61,14 @@ let before_div = 0;
 
     {
         name:"Banana Flower",
-        img:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/OTVld29wcUY3TWxLdUJsd0RGK1YxZz09-product_image.jpg",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/OTVld29wcUY3TWxLdUJsd0RGK1YxZz09-product_image.jpg",
         volume:"1 PC",
         price: 89, 
     },
 
     {
         name:"Thai Guava",
-        img:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1615633256596_product_5c6e4c9d019ca52990ba5856_1.jpg",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1615633256596_product_5c6e4c9d019ca52990ba5856_1.jpg",
         volume:"1 KG",
         price: 120, 
     },
@@ -84,20 +84,20 @@ let before_div = 0;
 
     {
         name:"Oranges",
-        img:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844135601_product_5c6e7d63019ca52990d5b9b5_1.jpg",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844135601_product_5c6e7d63019ca52990d5b9b5_1.jpg",
         volume:"1 KG",
         price:180 , 
     },
 
     {
         name:"Tangerine",
-        img:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844011026_product_5cc2f5e3d3ffea547621c48d_1.jpg",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844011026_product_5cc2f5e3d3ffea547621c48d_1.jpg",
         volume:"1 KG",
         price: 312, 
     },
     {
         name:"Sweet Lime",
-        img:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844135293_product_5c35dbf1b1e6c12dfdc86747_1.jpg",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844135293_product_5c35dbf1b1e6c12dfdc86747_1.jpg",
         volume:"6 PCS",
         price: 135, 
     },
@@ -227,11 +227,11 @@ let before_div = 0;
                         var button = document.createElement("button");
                         
         // -------------------Adding all products dynamically.------------------------------------
-                        img.src = products.img;
+                        img.src = products.image;
                         name.textContent=products.name;
                         quantity.textContent=products.volume;
                         price.textContent=`₹ ${products.price}`;
-                        button.innerText="+  ADD"
+                        button.innerText="+ADD"             // changes here
                         details.append(name,quantity,price);
                         quantity.setAttribute("class","quantity");
                         name.setAttribute("class","name");
@@ -317,7 +317,7 @@ let before_div = 0;
         cart = JSON.parse(localStorage.getItem('dCart')); 
 
         if(cart === null){
-        // console.log('set the cart');
+        console.log('set the cart');
         cart = [item];
         localStorage.setItem('dCart',JSON.stringify(cart));
         }else{
@@ -347,9 +347,9 @@ let before_div = 0;
     function displayCartItems() {
     let total_price = 0;
     let main_div = document.getElementById('products3')
-    // main_div.style.overflow = 'scroll';
+    // main_div.style.overflow = 'scroll';              // changes here
     let cart = JSON.parse(localStorage.getItem('dCart'));
-    // console.log(cart);
+    console.log(cart);
     
         while (main_div.firstChild) {
         main_div.removeChild(main_div.lastChild);
@@ -367,22 +367,24 @@ let before_div = 0;
             // li.style.backgroundColor="red"
 
             let div1 = document.createElement('div');
-            div1.setAttribute("id" , "div1")
+            // div1.style.width = '40%'                //changes here
+            div1.setAttribute("id" , "div1")         // changes here
             // div1.style.backgroundColor = "green"
             
             let h3 = document.createElement('h3');
             h3.innerText = prd.name;
-            h3.setAttribute("id" , "H3");
+            h3.setAttribute("id" , "H3");           // changes here
             // h3.style.backgroundColor = "blue"
             
             let h5 = document.createElement('h5');
-            h5.setAttribute("id" , "H5");
+            h5.setAttribute("id" , "H5");            // changes here
             // h5.style.backgroundColor = "green"
             h5.style.fontWeight = 'lighter';
             h5.innerText = prd.volume;
 
             let div2 = document.createElement('div');
             div2.id = "box";
+            // div2.style.width = '15%'              //changes here
 
             let btn1 = document.createElement('button');
             btn1.id = 'minus';
