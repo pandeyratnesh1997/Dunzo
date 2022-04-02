@@ -30,7 +30,11 @@
                     </select>
                 </div>
                 <div id="search" class="hover"><i class="fa-solid fa-magnifying-glass icons"></i><p class="iconText">Search</p></div>
-                <div id="cart" class="hover"><i class="fa-solid fa-cart-shopping icons"></i><p class="iconText">Cart</p></div>
+                <div id="cart" >
+                    <div class="hover"><a href="cart.html"><i class="fa-solid fa-cart-shopping icons"></i><p class="iconText">Cart</p></a></div>
+                    <div id="cartItems">0</div>
+                </div>
+                
                 <div id="signin" class="hover"><button id="signinBtn">Sign in</button></div>
             </div>
         </div>
@@ -259,8 +263,16 @@
                 window.location.href = "profile.html";
             }
     }
-    
-    
+    let cartItems = document.getElementById("cartItems");
+    let cartArr = JSON.parse(localStorage.getItem("dCart")) || [];
+    if(cartArr.length===0){
+        cartItems.style.display = "none";
+    }
+    else{
+        cartItems.innerText = cartArr.length;
+        console.log(cartArr.length);
+        cartItems.style.display = "block";
+    }
     
     
 </script>

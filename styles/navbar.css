@@ -59,4 +59,28 @@ body {
     color: rgb(0, 179, 122);
     cursor: pointer;
 }
+#cart {
+    display: flex;
+    box-sizing: border-box;
+}
+
+#cartItems {
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    background: rgb(255, 46, 86);
+    height: 18px;
+    width: 18px;
+    padding: 1px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 15px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    top:7px;
+}
 /* Header End */
