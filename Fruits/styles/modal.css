@@ -1,0 +1,135 @@
+  body {
+        font-family: Gilroy,sans-serif;
+    } 
+    
+    .modal-bg{
+        position: fixed;
+        width: 100%;
+         height: 100vh;
+        top: 0;
+        left: 0;
+        background-color:rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s opacity 0.5s;
+    }
+
+    .bg-active{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .modal{
+    position: relative;
+    background-color: white;
+    width: 450px;
+    height: 487px;
+    padding: 25px;
+    /* display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column; */
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;  
+    }
+
+    .modal button{
+            padding: 10px 30px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+    }
+
+    .modal-close{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        height: 20px;
+        font-size: 35px;
+    }
+
+    #one{
+    /* background-color: red; */
+    height: 150px;
+    font-size: 18px;
+
+    }
+
+    #one img{
+            width: 52px;
+            height: 52px;
+            margin-bottom: 15px;
+    }
+
+    #one h3{
+            margin-bottom: -0px;
+    }
+
+    #one li{
+            margin-top: 5px;
+            font-size: 16px;
+            color: #57585e;
+    }
+
+    #three{
+    /* background-color: blanchedalmond; */
+    height: 140px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color:#969aa3;
+    }
+
+    #three > h4{
+                  margin-bottom: 15px;
+    }
+
+    #three > input{
+            width: 19px;
+            height: 19px;
+            cursor: pointer;
+            margin-top: -5px;
+
+    }
+
+    #four{
+    /* background-color: aqua; */
+    height: 40px;
+    border-bottom: 1px solid #f0f1f4 ;
+    margin-top: 50px;
+    font-size: 16px;
+    line-height: 19px;
+    }
+
+    #total{
+    /* background-color: #123190; */
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 19px;
+    }
+
+    .button > button {
+    width: 178px;
+    height: 48px;
+    border-radius: 55px;
+    padding: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #00d290;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    }

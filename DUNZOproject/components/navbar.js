@@ -8,7 +8,7 @@ function navbar1(){
         <div id="search123" class="hover123"><i class="fa-solid fa-magnifying-glass icons123"></i><p class="iconText123">Search</p></div>
         <div id="cart" >
             <div class="hover123"><a href="cart.html"><i class="fa-solid fa-cart-shopping icons123"></i><p class="iconText123">Cart</p></a></div>
-            <div id="cartItems123"></div>
+            <div id="cartItems123">0</div>
         </div>
         <div id="profile123" class="hover123"><a href="../DUNZOproject/profile.html"><i class="fa-regular fa-user icons123"></i><p class="iconText123">Profile</p></a></div>
     </div>
@@ -24,7 +24,7 @@ function navbar2(){
     <div id="menuRight">
         <div id="cart" >
             <div class="hover123"><a href="cart.html"><i class="fa-solid fa-cart-shopping icons123"></i><p class="iconText123">Cart</p></a></div>
-            <div id="cartItems123"></div>
+            <div id="cartItems123">0</div>
         </div>
         <div id="profile123" class="hover123"><a href="../DUNZOproject/profile.html"><i class="fa-regular fa-user icons123"></i><p class="iconText123">Profile</p></a></div>
     </div>
@@ -39,7 +39,7 @@ function navbar3(){
     <div id="menuRight">
         <div id="cart" >
             <div class="hover123"><a href="cart.html"><i class="fa-solid fa-cart-shopping icons123"></i><p class="iconText123">Cart</p></a></div>
-            <div id="cartItems123"></div>
+            <div id="cartItems123">0</div>
         </div>
     </div>
 </div>`

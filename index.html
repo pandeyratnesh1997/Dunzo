@@ -10,18 +10,32 @@
     <link rel="stylesheet" href="styles\index.css">
 </head>
 <body>
-    <div id="navbar">
-        <div id="menubar">
+    <div id="navbar123">
+        <div id="menubar123">
             <div id="menuLeft">
-                <div><img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-7b2b540792556466133aea6e7c6ae513.png"></div>
-                <div class="menuTop"><select class="options"><option>Location</option></select></div>
+                <div><a href="index.html"><img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-7b2b540792556466133aea6e7c6ae513.png"></a></div>
+                <div class="menuTop">
+                    <i class="fa-solid fa-location-dot green123"></i>
+                    <select class="options123">
+                        <option>Mumbai</option>
+                    </select></div>
             </div>
             <div id="menuRight">
-                <div class="menuTop hover"><a href="">Dunzo for Partners</a></div>
-                <div class="menuTop hover"><select class="options hover"><option>Business with Dunzo</option></select></div>
-                <div id="search" class="hover"><i class="fa-solid fa-magnifying-glass icons"></i><p class="iconText">Search</p></div>
-                <div id="cart" class="hover"><i class="fa-solid fa-cart-shopping icons"></i><p class="iconText">Cart</p></div>
-                <div id="signin" class="hover"><button>Sign in</button></div>
+                <div class="menuTop hover123"><a href="https://www.dunzo.com/partner">Dunzo for Partners</a></div>
+                <div class="menuTop hover123">
+                    <select class="options123 hover123">
+                        <option>Business with Dunzo</option>
+                        <option><a href="https://www.dunzo.com/business">Need delivery partners?</a></option>
+                        <option><a href="">Sell products on Dunzo</a></option>
+                    </select>
+                </div>
+                <div id="search123" class="hover123"><i class="fa-solid fa-magnifying-glass icons123"></i><p class="iconText123">Search</p></div>
+                <div id="cart123" >
+                    <div class="hover123"><a href="cart.html"><i class="fa-solid fa-cart-shopping icons123"></i><p class="iconText123">Cart</p></a></div>
+                    <div id="cartItems123"></div>
+                </div>
+                
+                <div id="signin" class="hover123"><button id="signinBtn">Sign in</button></div>
             </div>
         </div>
     </div>
@@ -73,7 +87,7 @@
                 <div><img src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/dunzo/icons/newHome/promoBanner/kitImageUrl/largeIcons/default_fnv_secondary2_1613527515094.png"></div>
             </div>
             <div id="container2">
-                <div>
+                <div id="meatFish">
                     <img src="https://ik.imagekit.io/dunzo/home/tr:w-80,h-80_home_icon/icons/R4_Icons/Home/default_meat_tertiary_grid_1609739765849.png">
                     <p>Meat and Fish</p>
                 </div>
@@ -81,7 +95,7 @@
                     <img src="https://ik.imagekit.io/dunzo/home/tr:w-80,h-80_home_icon/icons/R4_Icons/Home/default_pets_tertiary_grid_1609739755734.png">
                     <p>Pet Supplies</p>
                 </div>
-                <div>
+                <div id="panShop">
                     <img src="https://ik.imagekit.io/dunzo/home/tr:w-80,h-80_home_icon/icons/R4_Icons/Home/paan_grid_1609739855940.png">
                     <p>Paan Shop</p>
                 </div>
@@ -171,10 +185,11 @@
     import showOTP from './components/signup.js';
 
     let signin = document.getElementById("signin");
+    let signinBtn = document.getElementById("signinBtn");
 
     let signup = document.getElementById("signup");
 
-    signin.onclick = function(){
+    signinBtn.onclick = function(){
         signup.style.display = "block";
     }
 
@@ -191,10 +206,14 @@
     
         let phone = document.getElementById("phone");
         if(phone.value.length==10 && checkbox.checked){
+
             otp.style.background = "rgb(0, 210, 144)";
+
             otp.onclick = function(){
                 phone.disabled = true;
-                otp.style.background = "rgb(225, 227, 234)";
+                let btn = document.getElementById("btn");
+
+                btn.innerHTML = `<button id="verify">Verify and continue</button>`;
 
                 let check = document.getElementById("check");
                 check.innerHTML = "";
@@ -211,37 +230,59 @@
                     timer.innerText = i;
                 },1000);
 
+                let otp1 = document.getElementById("otp1");
+                let otp2 = document.getElementById("otp2");
+                let otp3 = document.getElementById("otp3");
+                let otp4 = document.getElementById("otp4");
+                let otp5 = document.getElementById("otp5");
+                let otp6 = document.getElementById("otp6");
                 
+                let verify = document.getElementById("verify");
+                otp6.oninput = function(){
+                    if(otp1.value==1 && otp2.value==2 && otp3.value==3 && otp4.value==4 && otp5.value==5 && otp6.value==6){
+                        verify.style.background = "rgb(0, 210, 144)";
+                    }
+                }
 
-                otp.innerHTML = `<button id="verify">Verify and continue</button>`;
-
-                
-                
+                verify.onclick = function(){
+                    let userDetails = JSON.parse(localStorage.getItem("userDetails")) || [];
+                    let obj = {phone : phone.value};
+                    userDetails.push(obj);
+                    localStorage.setItem("userDetails", JSON.stringify(userDetails));
+                    signin.innerHTML = `<div id="profile123" class="hover123"><i class="fa-regular fa-user icons123"></i><p class="iconText">Profile</p></div>`;
+                    signup.style.display = "none";
+                }
             }
         }
     }
-
-    
-    let verify = document.getElementById("verify");
-    if(otp1==1 && otp2==2 && otp3==3 && otp4==4 && otp5==5 && otp6==6){
-        verify.style.background = "rgb(0, 210, 144)";
-        verify.onclick = function(){
-            let otp1 = document.getElementById("otp1").value;
-            let otp2 = document.getElementById("otp2").value;
-            let otp3 = document.getElementById("otp3").value;
-            let otp4 = document.getElementById("otp4").value;
-            let otp5 = document.getElementById("otp5").value;
-            let otp6 = document.getElementById("otp6").value;
-
-            let userDetails = JSON.parse(localStorage.getItem("userDetails")) || [];
-            let obj = {phone : phone.value};
-            userDetails.push(obj);
-            localStorage.setItem("userDetails", JSON.stringify(userDetails));
-            signin.innerHTML = `<div id="profile" class="hover"><i class="fa-regular fa-user icons"></i><p class="iconText">Profile</p></div>`;
-            signup.style.display = "none";
-        }
+    let user = JSON.parse(localStorage.getItem("userDetails")) || [];
+    if(user.length!=0){
+        signin.innerHTML = `<div id="profile123" class="hover123"><a href="../DUNZOproject/profile.html"><i class="fa-regular fa-user icons123"></i><p class="iconText">Profile</p><a/></div>`;
+        let profile = document.getElementById("profile123");
+            profile.onclick = function(){
+                window.location.href = "profile.html";
+            }
+    }
+    let cartItems = document.getElementById("cartItems123");
+    let cartArr = JSON.parse(localStorage.getItem("dCart")) || [];
+    if(cartArr.length===0){
+        cartItems.style.display = "none";
+    }
+    else{
+        cartItems.innerText = cartArr.length;
+        console.log(cartArr.length);
+        cartItems.style.display = "block";
     }
     
+    let meat = document.getElementById("meatFish");
+    meat.onclick = function(){
+        window.location.href = "meatfish.html";
+    }
+
+    let pan = document.getElementById("panShop");
+    pan.onclick = function(){
+        window.location.href = "";
+    }
     
 </script>
 <script src="scripts\index.js"></script>
