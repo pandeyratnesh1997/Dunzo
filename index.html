@@ -10,32 +10,32 @@
     <link rel="stylesheet" href="styles\index.css">
 </head>
 <body>
-    <div id="navbar">
-        <div id="menubar">
+    <div id="navbar123">
+        <div id="menubar123">
             <div id="menuLeft">
                 <div><a href="index.html"><img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-7b2b540792556466133aea6e7c6ae513.png"></a></div>
                 <div class="menuTop">
-                    <i class="fa-solid fa-location-dot green"></i>
-                    <select class="options">
+                    <i class="fa-solid fa-location-dot green123"></i>
+                    <select class="options123">
                         <option>Mumbai</option>
                     </select></div>
             </div>
             <div id="menuRight">
-                <div class="menuTop hover"><a href="https://www.dunzo.com/partner">Dunzo for Partners</a></div>
-                <div class="menuTop hover">
-                    <select class="options hover">
+                <div class="menuTop hover123"><a href="https://www.dunzo.com/partner">Dunzo for Partners</a></div>
+                <div class="menuTop hover123">
+                    <select class="options123 hover123">
                         <option>Business with Dunzo</option>
                         <option><a href="https://www.dunzo.com/business">Need delivery partners?</a></option>
                         <option><a href="">Sell products on Dunzo</a></option>
                     </select>
                 </div>
-                <div id="search" class="hover"><i class="fa-solid fa-magnifying-glass icons"></i><p class="iconText">Search</p></div>
-                <div id="cart" >
-                    <div class="hover"><a href="cart.html"><i class="fa-solid fa-cart-shopping icons"></i><p class="iconText">Cart</p></a></div>
-                    <div id="cartItems">0</div>
+                <div id="search123" class="hover123"><i class="fa-solid fa-magnifying-glass icons123"></i><p class="iconText123">Search</p></div>
+                <div id="cart123" >
+                    <div class="hover123"><a href="cart.html"><i class="fa-solid fa-cart-shopping icons123"></i><p class="iconText123">Cart</p></a></div>
+                    <div id="cartItems123"></div>
                 </div>
                 
-                <div id="signin" class="hover"><button id="signinBtn">Sign in</button></div>
+                <div id="signin" class="hover123"><button id="signinBtn">Sign in</button></div>
             </div>
         </div>
     </div>
@@ -87,7 +87,7 @@
                 <div><img src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/dunzo/icons/newHome/promoBanner/kitImageUrl/largeIcons/default_fnv_secondary2_1613527515094.png"></div>
             </div>
             <div id="container2">
-                <div>
+                <div id="meatFish">
                     <img src="https://ik.imagekit.io/dunzo/home/tr:w-80,h-80_home_icon/icons/R4_Icons/Home/default_meat_tertiary_grid_1609739765849.png">
                     <p>Meat and Fish</p>
                 </div>
@@ -95,7 +95,7 @@
                     <img src="https://ik.imagekit.io/dunzo/home/tr:w-80,h-80_home_icon/icons/R4_Icons/Home/default_pets_tertiary_grid_1609739755734.png">
                     <p>Pet Supplies</p>
                 </div>
-                <div>
+                <div id="panShop">
                     <img src="https://ik.imagekit.io/dunzo/home/tr:w-80,h-80_home_icon/icons/R4_Icons/Home/paan_grid_1609739855940.png">
                     <p>Paan Shop</p>
                 </div>
@@ -249,7 +249,7 @@
                     let obj = {phone : phone.value};
                     userDetails.push(obj);
                     localStorage.setItem("userDetails", JSON.stringify(userDetails));
-                    signin.innerHTML = `<div id="profile" class="hover"><i class="fa-regular fa-user icons"></i><p class="iconText">Profile</p></div>`;
+                    signin.innerHTML = `<div id="profile123" class="hover123"><i class="fa-regular fa-user icons123"></i><p class="iconText">Profile</p></div>`;
                     signup.style.display = "none";
                 }
             }
@@ -257,13 +257,13 @@
     }
     let user = JSON.parse(localStorage.getItem("userDetails")) || [];
     if(user.length!=0){
-        signin.innerHTML = `<div id="profile" class="hover"><i class="fa-regular fa-user icons"></i><p class="iconText">Profile</p></div>`;
-        let profile = document.getElementById("profile");
+        signin.innerHTML = `<div id="profile123" class="hover123"><a href="../DUNZOproject/profile.html"><i class="fa-regular fa-user icons123"></i><p class="iconText">Profile</p><a/></div>`;
+        let profile = document.getElementById("profile123");
             profile.onclick = function(){
                 window.location.href = "profile.html";
             }
     }
-    let cartItems = document.getElementById("cartItems");
+    let cartItems = document.getElementById("cartItems123");
     let cartArr = JSON.parse(localStorage.getItem("dCart")) || [];
     if(cartArr.length===0){
         cartItems.style.display = "none";
@@ -274,6 +274,15 @@
         cartItems.style.display = "block";
     }
     
+    let meat = document.getElementById("meatFish");
+    meat.onclick = function(){
+        window.location.href = "meatfish.html";
+    }
+
+    let pan = document.getElementById("panShop");
+    pan.onclick = function(){
+        window.location.href = "";
+    }
     
 </script>
 <script src="scripts\index.js"></script>

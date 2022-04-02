@@ -212,12 +212,13 @@
 }
 #container2>div {
     background-color: white;
+    cursor: pointer;
     padding: 15px;
     border-radius: 10px;
     font-size: 12px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-#container2>div>img {
+#container2>div>a>img {
     width: 30%;
 }
 #picks {
