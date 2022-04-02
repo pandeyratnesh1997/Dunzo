@@ -107,8 +107,8 @@ let before_div = 0;
 
 
     let Fruits = [Papaya , Banana , Oranges ];
-
     localStorage.setItem('PBO',JSON.stringify(Fruits));
+    // console.log(Fruits)
 
 // ___________________________________________________________________________________________________________
 
@@ -138,6 +138,7 @@ let before_div = 0;
     
     let Vegetables = [Fresh_Vegetables];
     localStorage.setItem('veg',JSON.stringify(Vegetables));
+    // console.log(Vegetables)
 
 // _______________________________________________________________________________________________________________________________________________________
 
@@ -166,6 +167,7 @@ let before_div = 0;
 
   let Herbs = [Fresh_Herbs];
   localStorage.setItem('herbs',JSON.stringify(Herbs));
+//   console.log(Herbs)
 
  
 // ________________________________________________________________________________________________________________________________________________________________________________
@@ -195,7 +197,7 @@ let before_div = 0;
 
     let Cuts = [ Cuts_And_Sprouts];
     localStorage.setItem('cuts',JSON.stringify(Cuts));
-    console.log(Cuts)
+    // console.log(Cuts)
 
 
 // _________________________________________________________________________________________________________________________________________________________________________
@@ -209,8 +211,8 @@ let before_div = 0;
         arr.forEach(function(type) {
         type.forEach(function(products,index) {
         if(index === 0){
-        let h2 = document.createElement('p');
-        h2.setAttribute("id" , "H2")
+        let h2 = document.createElement('h2');   
+        h2.setAttribute("id" , "h2")             // changes here
         h2.innerText = products.name;
         main_div.append(h2);
 
@@ -271,6 +273,8 @@ let before_div = 0;
         let itemsHead = document.getElementById('heading');
         itemsHead.innerText = btn.innerText;
         let data = JSON.parse(localStorage.getItem(id));
+        // console.log("Dat:" , data)
+
 
         if(data == null){
         let main_div = document.getElementById("prds");
@@ -313,7 +317,7 @@ let before_div = 0;
         cart = JSON.parse(localStorage.getItem('dCart')); 
 
         if(cart === null){
-        console.log('set the cart');
+        // console.log('set the cart');
         cart = [item];
         localStorage.setItem('dCart',JSON.stringify(cart));
         }else{
@@ -345,7 +349,7 @@ let before_div = 0;
     let main_div = document.getElementById('products3')
     // main_div.style.overflow = 'scroll';
     let cart = JSON.parse(localStorage.getItem('dCart'));
-    console.log(cart);
+    // console.log(cart);
     
         while (main_div.firstChild) {
         main_div.removeChild(main_div.lastChild);
@@ -366,7 +370,7 @@ let before_div = 0;
             div1.setAttribute("id" , "div1")
             // div1.style.backgroundColor = "green"
             
-            let h3 = document.createElement('p');
+            let h3 = document.createElement('h3');
             h3.innerText = prd.name;
             h3.setAttribute("id" , "H3");
             // h3.style.backgroundColor = "blue"

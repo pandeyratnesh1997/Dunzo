@@ -240,7 +240,7 @@
                             /* overflow: scroll; */
                             flex-direction: column;
                             padding-top: 30px;
-                            overflow-x: hidden;
+                            /* overflow-x: hidden; */
                             margin-left: 100px;
                             position: sticky;
                             top: 200px;
@@ -254,8 +254,6 @@
                             color: grey;
                             background-color: #fff;
                             border: none;
-                            scroll-behavior: smooth;
-                            background-attachment: scroll;
                             /* border: 1px solid red; */
 
     
@@ -272,11 +270,10 @@
                             display: flex;
                             flex-direction: column;
                             /* overflow: scroll; */
-                            overflow-x: hidden;
+                            /* overflow-x: hidden; */
                             border-left: 1px solid rgb(233, 212, 212);
                             border-right: 1px solid rgb(233, 212, 212);
-                            margin-left: 5px;
-                        
+                            margin-left: 5px;              
         }
                 #bar{
                           height:10px;
@@ -299,7 +296,7 @@
                             /* border: 1px solid red; */
      }
     
-     #H2{
+     #h2{
          /* border: 1px solid red; */
          height: 36px;
          line-height: 24px;
@@ -340,7 +337,6 @@
     }
         
         #divs > button{
-                   
                         width: 100px;
                         height: 35px;
                         border-radius: 55px;
@@ -457,6 +453,7 @@
             margin: auto;
             border: 1px solid #e7e8eb;
             margin-left: 15px;
+            /* background-color: red; */
         }
         
         #box button{
@@ -472,6 +469,10 @@
                     cursor: pointer;
                     /* border: 1px solid rgb(227, 104, 16); */
         }
+
+        #plus{
+            color:green;
+            }
 
 
         #val{

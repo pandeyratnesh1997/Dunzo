@@ -174,7 +174,7 @@ let CovidEssentials = [
         let itemsHead = document.getElementById('heading');
         itemsHead.innerText = btn.innerText;
         let data = JSON.parse(localStorage.getItem(id));
-
+         
         if(data == null){
         let main_div = document.getElementById("prds");
         let h2 = document.createElement('h2');
@@ -266,6 +266,7 @@ let CovidEssentials = [
             let h3 = document.createElement('h3');
             h3.innerText = prd.name;
             h3.style.fontWeight = 'lighter';
+            
             let h5 = document.createElement('h5');
             h5.style.fontWeight = 'lighter';
             h5.innerText = prd.volume;
