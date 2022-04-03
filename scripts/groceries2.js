@@ -1,90 +1,119 @@
-
 let before_element = document.getElementById('products1').querySelector('button');
 let before_div = 0;
 
-  // ----------------Fresh Fruits Objects----------------------------------------------------------------------------------------------------------------------
-  
-  let Papaya = [
+    let Rice_Grains = [
     {
-        name: "Chickens"
+        name:'Rice & Grains'
     },
-    {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/MGdFRlFaM00wMjdlY0wva0lqRlhQQT09-product_image.jpg",name:"Chicken Breat strips", price:123},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1646206064623_product_5bcf812a752feb5014a2e2d5_1.jpg",name:" Boneless Chicken", price:523},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/RTd1WE5ndkh0WHVmdE1aQ3ZQVWlaQT09-product_image.jpg",name:"Chicken Fry Cut", price:233},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644858426890_product_5cb462e6f3995b3a4e6da393_1.jpg",name:"Chicken Curry Cut", price:543},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/S1RCdjFobVJkZzZXaWs4VkM3OEhrQT09-product_image.jpg",name:"Broiler Chicken", price:223},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/YXpwaFhHTWRyemVITWtHcHJaQkhJQT09-product_image.jpg",name:"Chicken Cury cut With Skin", price:278}
-        ]
-
-    let Fruits = [Papaya  ];
-
-    localStorage.setItem('PBO',JSON.stringify(Fruits));
-
-// _____________________________________
-
-     // ----------------Fresh Vegetables Objects----------------------------------------------------------------------------------------------------------------------
-  
-     let Fresh_Vegetables = [
-        {
-            name: "Fish & SeaFoods"
-        },
-
-        {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/TFRrSXA0RlpDM0ppbktJamdtRi9TUT09-product_image.jpg",name:"Cotla", price:400},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/N1F6akV6czcwK3lHUFhQd0tpQ2NzUT09-product_image.jpg",name:" Rohu", price:400},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/T09YL2VSWWZ6SHBUSllHaGh2bjlDUT09-product_image.jpg",name:"Rohu-Slice", price:500},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/aTZZWDF4aXVMMjFlanNUM0xmdzRaQT09-product_image.jpg",name:"Catla Steaks Without Head", price:699},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1615716392323_product_5c4b852379ae300f6ea008e5_1.jpg",name:"Fish Popcorn", price:800},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/VUFyY1NsVy9BL3RvRmZrckhlUzRzQT09-product_image.jpg",name:"Prawns(Medium)", price:1000}
-        ]
-
-    
-    let Vegetables = [Fresh_Vegetables];
-    localStorage.setItem('veg',JSON.stringify(Vegetables));
-
-// ___________________________________________________
-
-   // ----------------Fresh Herbs Objects----------------------------------------------------------------------------------------------------------------------
-  
-   let Fresh_Herbs = [
     {
-        name: " Mutton"
+        name:'Daawat Biryani Basmati Rice',
+        img:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/cjdLRDdQemJGN2hEWkRjRnc5cStjQT09-product_image.jpg',
+        volume:'1kg',
+        price:220
     },
+    {
+        name:'Fortune Biryani Special Basmati Rice',
+        img:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/aW9mM3dOYy94eFNjbndEanN1SWRSdz09-product_image.jpg',
+        volume:'1kg',
+        price:175
+    },
+    {
+        name:'Sabudana',
+        img:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1615706681361_product_5c282c2ff7e98871f4f8c193_1.jpg',
+        volume:'500gms',
+        price:59
+    }
+];
 
-    {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644858423802_product_5bcf812a752feb5014a2e2f8_1.jpg",name:"Mutton Curry Cut", price:999},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/RjE2ZHoydnVrMDFoVTJ4dTYyNEdiUT09-product_image.jpg",name:" Mutton With Bone", price:799},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/aHpqdTFrUkhCUVdERm1IUENpUVZzUT09-product_image.jpg",name:"Mutton Leg Shoulder", price:1199},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644858423884_product_5bcf812a752feb5014a2e2fa_1.jpg",name:"Mutton Keema(Mince)", price:999},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/YlhMMUx3b1RLUXJyUnFURk95WktVZz09-product_image.jpg",name:"Mutton Biriyani Cut", price:850},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/clZlaC9FemJqY2hTNWtIS1IyM040QT09-product_image.jpg",name:"Mutton Chops", price:779}
-
-  ];
-
-  let Herbs = [Fresh_Herbs];
-  localStorage.setItem('herbs',JSON.stringify(Herbs));
-
- 
-// ____________________________________________________________
-
-      // ----------------Cuts And Sprouts-------------------------------------------------------------------------------------------------------------------
-  
-      let  Cuts_And_Sprouts = [
-        {
-            name: "Eggs"
-        },
-
-        {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1615716379823_product_5bcf812a752feb5014a2e2ba_1.jpg",name:"Eggs", price:72},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/VVdxZWI2djBHNFFtTHMrU1pSdjAwUT09-product_image.jpg",name:"Natures Farn Fresh Eggs", price:78},
-           
-
-    ];
-
-    let Cuts = [ Cuts_And_Sprouts];
-    localStorage.setItem('cuts',JSON.stringify(Cuts));
-    console.log(Cuts)
+let Pulses =[
+    {
+        name:'Pulses'
+    },
+    {
+        name:'Groundnuts',
+        img:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1615706651987_product_5c135ae66994164bc9f7fdc0_1.jpg',
+        volume:'500gms',
+        price:117,
+    },
+    {
+        name:'Kabuli Chana',
+        img:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1615706289164_product_5c135ae66994164bc9f7fdd1_1.jpg',
+        volume:'500gms',
+        price:123,
+    },
+    {
+        name:'Black Urad Dal',
+        img:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/cFVnVmxjcGJpUEJQMEVzaDNwaHRrdz09-product_image.jpg',
+        volume:'1kg',
+        price:140,
+    }
+];
 
 
-// _________________________________________________________
+let Atta_Flour =[
+    {
+        name:'Atta & Flour'
+    },
+    {
+        name:'Aashirvaad Multigrain Atta',
+        img:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/aFlwL0h0d2RoT0poaG1WaU1zb3djUT09-product_image.jpg',
+        volume:'5kgs',
+        price:310,
+    },
+    {
+        name:'Besan Flour',
+        img:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/VVhnT3Y5YlZkbzVlL2RCVWVpamFsQT09-product_image.jpg',
+        volume:'500gms',
+        price:60,
+    },
+    {
+        name:'Aashirvaad Superior Mp Atta',
+        img:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1615700352436_product_5c2638fbbbc7ac725f291d26_1.jpg',
+        volume:'5kgs',
+        price:305,
+    }
+];
 
+let Provisions = [Rice_Grains,Pulses,Atta_Flour];
+
+localStorage.setItem('provisions',JSON.stringify(Provisions));
+
+let CovidEssentials = [
+    {
+        name:'Others'
+    },  
+    {
+        name: "Dettol Small D95 Mask",
+        volume: "1 PC",
+        price: "299",
+        img: "https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1625126055715_product_60dc63170697f4001ac2b6f9_1.jpg",
+    }, {
+        name: "24 Seven Premium Protection Medium Green Mask",
+        volume: "1 Pc",
+        price: "100",
+        img: "https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/MUpPU0ZHVnJaVWk5cmZtQ3RGTXMxdz09-product_image.jpg",
+    }, {
+        name: "Comfort After Wash Anti Bacterial Fabric Conditioner",
+        volume: "200 Ml",
+        price: "56",
+        img: "https://ik.imagekit.io/dunzo/1614969862598_variant_5c021de829a128442cdc375f_1.jpg?tr=w-488,h-488,cm-pad_resize",
+    }, 
+    // {
+    //     name: "Surf Excel Easywash Detergent Powder",
+    //     volume: "500 Gms",
+    //     price: "155",
+    //     img: "https://ik.imagekit.io/dunzo/1614969860568_variant_5bffffb0f07b8356278c14a6_1.jpg?tr=w-488,h-488,cm-pad_resize",
+    // },
+    //  {
+    //     name: "Vanish Oxi Action Liquid",
+    //     volume: "180 Ml",
+    //     price: "199",
+    //     img: "https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1615700527346_product_5bf85b70269a0f1dd3c38995_1.jpg",
+    // },
+ ];
+
+    let covidEssentials = [CovidEssentials];
+    localStorage.setItem('covidEssentials',JSON.stringify(covidEssentials));
 
 
 
@@ -110,9 +139,9 @@ let before_div = 0;
                         var button = document.createElement("button");
                         
         // -------------------Adding all products dynamically.------------------------------------
-                        img.src = products.url;
+                        img.src = products.img;
                         name.textContent=products.name;
-                        // quantity.textContent=products.volume;
+                        quantity.textContent=products.volume;
                         price.textContent=`₹ ${products.price}`;
                         button.innerText="+ADD"
                         details.append(name,quantity,price);
@@ -170,10 +199,7 @@ let before_div = 0;
     
 
 
-    display(JSON.parse(localStorage.getItem('PBO')));
-    display(JSON.parse(localStorage.getItem('cuts')));
-    display(JSON.parse(localStorage.getItem('herbs')));
-    display(JSON.parse(localStorage.getItem('veg')));
+    display(JSON.parse(localStorage.getItem('covidEssentials')));
     
 
     function moveToCart() {
@@ -387,22 +413,7 @@ let before_div = 0;
         qty += prd.qty;
         });
 
-        circle.innerText = "qty";
+        circle.innerText = qty;
         }else{
         document.getElementById('circle').style.display = "none";
         }
-        
-
-
-        // seaching
-        function search(){
-            var searchText = document.getElementById("searchBar").value;
-            console.log(searchText)
-             var filterData = Papaya.filter(function(item){
-               return item.name.includes(searchText);
-             });
-             console.log(filterData)
-             displayCartItems(filterData);
-          
-            //  document.getElementById("items").innerText = filterData.length;
-          }

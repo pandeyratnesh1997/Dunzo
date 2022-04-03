@@ -5,23 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles\navbar.css">
+    <link rel="stylesheet" href="styles\navbar2.css">
     <script src="https://kit.fontawesome.com/32f181d7c4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/showmeatfish.css">
 </head>
 <body>
+    <div id="navbar123"></div>
     <!-- for header -->
-    <div id="menubar">
-        <div id="menuLeft">
-            <div><img src="https://resources.dunzo.com/web-assets/prod/_next/static/images/logo-7b2b540792556466133aea6e7c6ae513.png"></div>
-            <div class="menuTop"><select class="options"><option>Location</option></select></div>
-        </div>
-        <div id="menuRight">
-           
-            <div class="hover"><i class="fa-solid fa-cart-shopping icons"></i><p class="iconText">Cart</p></div>
-            <div class="hover"><i class="fa-regular fa-user icons"></i><p class="iconText">Profile</p></div>
-        </div>
-    </div>
 <!-- ---------------------------------------- -->
 
 <!-- for the rgb(0,210,144 color div -->
@@ -87,3 +77,17 @@
 </body>
 </html>
 <script src="./scripts/showmeatfish.js"></script>
+<script type="module">
+    import {navbar2} from "./components/navbar.js";
+    document.getElementById("navbar123").innerHTML = navbar2();
+
+    let cartItems = document.getElementById("cartItems123");
+    let cartArr = JSON.parse(localStorage.getItem("dCart")) || [];
+    if(cartArr.length===0){
+        cartItems.style.display = "none";
+    }
+    else{
+        cartItems.innerText = cartArr.length;
+        cartItems.style.display = "block";
+    }
+</script>

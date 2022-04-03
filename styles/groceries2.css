@@ -1,59 +1,100 @@
-body{
-    font-family: Gilroy,sans-serif;
-    font-weight: 500;
+* {
+margin: 0%;
+font-family: 'Roboto', sans-serif;
 }
-#content-head{
-box-sizing: border-box;
+
+#sam {
+width: 85%;
+height: 35px;
+padding: 1% 10%;
+margin-top: -4%;
+background-color: white;
+position: fixed;
+
+}
+
+#sam>div {
+padding: 0% 0%;
+float: left;
+margin: 0.5% 0%;
+}
+
+#sam>img {
+float: left;
+margin-left: 1%;
+width: 10%;
+height: 80%;
+}
+
+#location{
 display: flex;
-align-items: flex-start;
-width: 100%;
-top: 0px;
-background: rgb(247, 253, 250);
+height:20px;
+flex-direction: row;
+cursor: pointer;
 }
-#father{
-    margin-top: 60px;
-    height: 250px;
-    background: rgb(247, 253, 250);
-    
+
+#head {
+display: flex;
+width:100%;
+background-color: rgb(247, 253, 250);
+flex-direction: column;
+height:600px;
+margin-top: 50px;
 }
-#father div{
-    margin: auto;
-    margin-left: 50px;
-    justify-content: center;
-  
+
+#name{
+margin-left: 14.5%;
+margin-top: 2%;
+font-weight: 500;
+font-size: 12px;
+color:rgb(0, 179, 122);
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+cursor: pointer;
 }
-#FishHome{
-    display: flex;
-    box-sizing: border-box;
-    
+
+#head>#part1{
+width:100%;
+height:250px;
+display: flex;
+flex-direction: row;
 }
-#imghome{
-    display: flex;
-    box-sizing: border-box;
-    margin: auto;
-    margin-right: 10px;
+
+#part1>#part1a{
+height: 56%;
+flex-direction: row;
+flex-wrap: wrap;
+margin-bottom: 17px;
+margin-left: 14%;
+margin-top: 2%;
+display: flex;
 }
-#imghome img{
-    height: 150px;
-    width: 150px;
-    margin-top: 20px;
+
+#part1a>#image0{
+width:150px;
+height:140px;
 }
-#datas{
-    display: flex;
-    gap: 15px;
-    color: #808080;
+
+#image0>img{
+width:150px;
+height: 140px;
 }
-#datas i{
-  margin-top: 17px;
-  color: aquamarine;
+
+#part1a>#image1{
+margin-left: 40px;
 }
-#datas p:first-child{
-    margin-left: -45px;
+
+#image1>h1{
+font-weight: 500;
+color: rgb(15, 25, 56);
 }
-#datas p:last-child{
-    color: blueviolet;
+
+#image1>p{
+color:grey;
+padding-top: 20px;
+font-weight: 400;
 }
-/* for serch */
+/*---------------------------------------- Search Functionality------------------------------ */
+
 #search{
 height:100px;
 width:100%;
@@ -80,7 +121,9 @@ margin-left:370px;
 margin-top: 25px;
 z-index: 1;
 }
-/* body */
+
+/*-------------------------------------- Products of each shop------------------------------------ */
+
 #products{
 display: flex;
 flex-direction: row;
@@ -91,7 +134,7 @@ background-color: #fff;
 #products1,#products2,#products3{
 height:400px
 }
-/* priducts1 */
+/*------------------------------ Product part -1 -------------------------------*/
 
 #products>#products1{
 width:24%;
@@ -149,7 +192,7 @@ display: flex;
 flex-direction: row;
 width:100%;
 height:150px;
-align-items: center;
+ align-items: center;
 line-height: 20px;
 }
 #divs>img{
@@ -188,9 +231,9 @@ font-weight: 400;
 color:black;
 }
 
-/* ---------------------Products part - 3 ----------------------------------*/
+ /* ---------------------Products part - 3 ----------------------------------*/
 
-#products>#products3{
+ #products>#products3{
 width:38%;
 cursor: pointer;
 }
@@ -281,12 +324,13 @@ position: relative;
 }
 
 #checkout button{
-display: flex;
-gap: 70px;
 height: 30px;
+width: 250px;
 background-color:rgb(0,210,144);
 border-radius: 15px;
 font-size: large;
+padding: 5px;
+color: white;
 font-weight: bold;
 position: absolute;
 right: 50%;
@@ -319,8 +363,4 @@ position: absolute;
 height: 20px;
 text-align: center;
 color: white;
-}
-h5{
-margin-top: -40px;
-text-decoration: solid black;
 }

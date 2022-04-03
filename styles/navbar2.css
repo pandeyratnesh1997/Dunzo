@@ -85,6 +85,6 @@ body {
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
-    top:7px;
+    top:-7px;
 }
 /* Header End */

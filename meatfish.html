@@ -41,6 +41,16 @@
     import {navbar1} from "./components/navbar.js";
     document.getElementById("navbar123").innerHTML = navbar1();
 
+    let cartItems = document.getElementById("cartItems123");
+    let cartArr = JSON.parse(localStorage.getItem("dCart")) || [];
+    if(cartArr.length===0){
+        cartItems.style.display = "none";
+    }
+    else{
+        cartItems.innerText = cartArr.length;
+        cartItems.style.display = "block";
+    }
+
 </script>
 <script src="./scripts/meatFish.js">
 

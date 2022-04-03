@@ -7,11 +7,11 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/32f181d7c4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles\navbar.css">
-    <link rel="stylesheet" href="./bhushanstyle/pan_shop.css">
+    <link rel="stylesheet" href="styles\pan_shop.css">
     
 </head>
 <body>
-  <div id="navbar">
+  <div id="navbar123">
 
   </div>
   <div id="advance">
@@ -28,8 +28,19 @@
 </body>
 </html>
 <script type="module">
-  import navbar from "./components/navbar.js";
-document.getElementById("navbar").innerHTML = navbar();
+  import {navbar1} from "./components/navbar.js";
+  document.getElementById("navbar123").innerHTML = navbar1();
+
+  let cartItems = document.getElementById("cartItems123");
+    let cartArr = JSON.parse(localStorage.getItem("dCart")) || [];
+    if(cartArr.length===0){
+        cartItems.style.display = "none";
+    }
+    else{
+        cartItems.innerText = cartArr.length;
+        console.log(cartArr.length);
+        cartItems.style.display = "block";
+    }
 </script>
 
-<script src="./bhushanjs/pan_shop.js"></script>
+<script src="scripts\pan_shop.js"></script>

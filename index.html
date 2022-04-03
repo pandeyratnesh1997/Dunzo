@@ -84,7 +84,7 @@
                 <div><a href="groceries.html"><img class="sunny" src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/operator-FFWUCfzmUzhok89HMYt0ON2Gy5oZECO73gRenPw11HxAeCLBtTBOG8FMqMTe92UOnScOPMUnjYDcaPVxx7wSFJwXJ3kSR3YRsPby4EgC4zW2mVYLc99zuvVh7O2Ppmx2QMQd40UiwYLGhy0OjbMayr.png"></a></div>
                 <div><img src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/dunzo/icons/newHome/promoBanner/kitImageUrl/largeIcons/default_pnd_secondary2_1613527381240.png"></div>
                 <div><img src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/operator-ABHxCyRo8CLcEMC0YE43zsmH2XHFv3xr6B8Y3tIdBpKE1NBAjyHS4vgJY3T3z8AEascTap9OETFY0CdvpHj70KZSGFNrCxkFVtUugsMRkyV5jVk9XHl164PCPop56VNkdpLhfymH86JkFjMlYYgQHK.jpg"></div>
-                <div><img src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/dunzo/icons/newHome/promoBanner/kitImageUrl/largeIcons/default_fnv_secondary2_1613527515094.png"></div>
+                <div><a href="Fruits.html"><img src="https://ik.imagekit.io/dunzo/home/tr:w-488,h-360_home_icon/dunzo/icons/newHome/promoBanner/kitImageUrl/largeIcons/default_fnv_secondary2_1613527515094.png"></a></div>
             </div>
             <div id="container2">
                 <div id="meatFish">
@@ -249,7 +249,7 @@
                     let obj = {phone : phone.value};
                     userDetails.push(obj);
                     localStorage.setItem("userDetails", JSON.stringify(userDetails));
-                    signin.innerHTML = `<div id="profile123" class="hover123"><i class="fa-regular fa-user icons123"></i><p class="iconText">Profile</p></div>`;
+                    signin.innerHTML = `<div id="profile123" class="hover123"><a href="profile.html"><i class="fa-regular fa-user icons123"></i><p class="iconText">Profile</p><a/></div>`;
                     signup.style.display = "none";
                 }
             }
@@ -257,11 +257,7 @@
     }
     let user = JSON.parse(localStorage.getItem("userDetails")) || [];
     if(user.length!=0){
-        signin.innerHTML = `<div id="profile123" class="hover123"><a href="../DUNZOproject/profile.html"><i class="fa-regular fa-user icons123"></i><p class="iconText">Profile</p><a/></div>`;
-        let profile = document.getElementById("profile123");
-            profile.onclick = function(){
-                window.location.href = "profile.html";
-            }
+        signin.innerHTML = `<div id="profile123" class="hover123"><a href="profile.html"><i class="fa-regular fa-user icons123"></i><p class="iconText">Profile</p><a/></div>`;
     }
     let cartItems = document.getElementById("cartItems123");
     let cartArr = JSON.parse(localStorage.getItem("dCart")) || [];
@@ -270,7 +266,6 @@
     }
     else{
         cartItems.innerText = cartArr.length;
-        console.log(cartArr.length);
         cartItems.style.display = "block";
     }
     
@@ -281,7 +276,7 @@
 
     let pan = document.getElementById("panShop");
     pan.onclick = function(){
-        window.location.href = "";
+        window.location.href = "pan_shop.html";
     }
     
 </script>

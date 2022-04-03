@@ -204,6 +204,10 @@
     width: 100%;
     border-radius: 10px;
 }
+#container>div>a>img{
+    width: 100%;
+    border-radius: 10px;
+}
 #container2 {
     margin-top: 30px;
     display: grid;
@@ -218,9 +222,10 @@
     font-size: 12px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-#container2>div>a>img {
+#container2>div>img {
     width: 30%;
 }
+
 #picks {
     padding-top: 30px;
     width: 65%;

@@ -1,4 +1,3 @@
-
 let before_element = document.getElementById('products1').querySelector('button');
 let before_div = 0;
 
@@ -6,84 +5,202 @@ let before_div = 0;
   
   let Papaya = [
     {
-        name: "Chickens"
+        name: "Papaya, Pineapple, Pomegranate"
     },
-    {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/MGdFRlFaM00wMjdlY0wva0lqRlhQQT09-product_image.jpg",name:"Chicken Breat strips", price:123},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1646206064623_product_5bcf812a752feb5014a2e2d5_1.jpg",name:" Boneless Chicken", price:523},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/RTd1WE5ndkh0WHVmdE1aQ3ZQVWlaQT09-product_image.jpg",name:"Chicken Fry Cut", price:233},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644858426890_product_5cb462e6f3995b3a4e6da393_1.jpg",name:"Chicken Curry Cut", price:543},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/S1RCdjFobVJkZzZXaWs4VkM3OEhrQT09-product_image.jpg",name:"Broiler Chicken", price:223},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/YXpwaFhHTWRyemVITWtHcHJaQkhJQT09-product_image.jpg",name:"Chicken Cury cut With Skin", price:278}
-        ]
 
-    let Fruits = [Papaya  ];
+    {
+        name:'Pineapple',
+        image:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844136632_product_5c80d9cbd8b2f755a2d44052_1.jpg',
+        volume:'1 PC',
+        price: 135, 
+    },
 
+    {
+        name:"Papaya - Raw",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844136698_product_5c80d9cbd8b2f755a2d4406b_1.jpg",
+        volume:"1 KG",
+        price: 65, 
+    },
+
+    {
+        name:"Papaya",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844010855_product_5caef825de0f3b0443a7d9d7_1.jpg",
+        volume:"1 KG",
+        price: 58 , 
+    },
+
+    {
+        name:"Peeled Pomegranate",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844013548_product_5d40054847ddec28ec55ba98_1.jpg",
+        volume:"500 GMS",
+        price: 85, 
+    },
+
+    {
+        name:"Big Pomegranate",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/M084Mk1iNVIyK3JRMC83bVh0ZjhWQT09-product_image.jpg",
+        volume:"1 KG",
+        price: 279, 
+    },
+
+    {
+        name:"Pomegrante",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844133820_product_5c0e70078d92d07fdfc24835_1.jpg",
+        volume:"1 KG",
+        price: 240, 
+    },
+
+];
+
+  let Banana = [
+
+    {
+        name:"Banana, Guava, Sapota",
+
+    },
+
+    {
+        name:"Banana Flower",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/OTVld29wcUY3TWxLdUJsd0RGK1YxZz09-product_image.jpg",
+        volume:"1 PC",
+        price: 89, 
+    },
+
+    {
+        name:"Thai Guava",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1615633256596_product_5c6e4c9d019ca52990ba5856_1.jpg",
+        volume:"1 KG",
+        price: 120, 
+    },
+
+  ];
+
+  let Oranges = [
+         
+    {
+        name:"Oranges, Mosambi",
+       
+    },
+
+    {
+        name:"Oranges",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844135601_product_5c6e7d63019ca52990d5b9b5_1.jpg",
+        volume:"1 KG",
+        price:180 , 
+    },
+
+    {
+        name:"Tangerine",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844011026_product_5cc2f5e3d3ffea547621c48d_1.jpg",
+        volume:"1 KG",
+        price: 312, 
+    },
+    {
+        name:"Sweet Lime",
+        image:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844135293_product_5c35dbf1b1e6c12dfdc86747_1.jpg",
+        volume:"6 PCS",
+        price: 135, 
+    },
+
+  ];
+
+
+
+    let Fruits = [Papaya , Banana , Oranges ];
     localStorage.setItem('PBO',JSON.stringify(Fruits));
+    // console.log(Fruits)
 
-// _____________________________________
+// ___________________________________________________________________________________________________________
 
      // ----------------Fresh Vegetables Objects----------------------------------------------------------------------------------------------------------------------
   
      let Fresh_Vegetables = [
         {
-            name: "Fish & SeaFoods"
+            name: "Cut_&_Packed_Vegetables"
         },
 
-        {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/TFRrSXA0RlpDM0ppbktJamdtRi9TUT09-product_image.jpg",name:"Cotla", price:400},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/N1F6akV6czcwK3lHUFhQd0tpQ2NzUT09-product_image.jpg",name:" Rohu", price:400},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/T09YL2VSWWZ6SHBUSllHaGh2bjlDUT09-product_image.jpg",name:"Rohu-Slice", price:500},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/aTZZWDF4aXVMMjFlanNUM0xmdzRaQT09-product_image.jpg",name:"Catla Steaks Without Head", price:699},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1615716392323_product_5c4b852379ae300f6ea008e5_1.jpg",name:"Fish Popcorn", price:800},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/VUFyY1NsVy9BL3RvRmZrckhlUzRzQT09-product_image.jpg",name:"Prawns(Medium)", price:1000}
-        ]
+        {
+            name:"Sprouts-Mixed",
+            image:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844135069_product_5c282c2ff7e98871f4f8c1f4_1.jpg',
+            volume:'1 PACK',
+            price: 30, 
+        },
+
+        {
+            name:"Fresh_Green_Chilli_bajji",
+            image:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/UjMyRGtDWDB3d2ZIWU9KSFd3MXY4dz09-product_image.jpg',
+            volume:'1 PACK',
+            price: 35, 
+        },
+
+    ];
 
     
     let Vegetables = [Fresh_Vegetables];
     localStorage.setItem('veg',JSON.stringify(Vegetables));
+    // console.log(Vegetables)
 
-// ___________________________________________________
+// _______________________________________________________________________________________________________________________________________________________
 
    // ----------------Fresh Herbs Objects----------------------------------------------------------------------------------------------------------------------
   
    let Fresh_Herbs = [
     {
-        name: " Mutton"
+        name: "Chilli, Lemon, Garlic_And_Ginger"
     },
 
-    {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644858423802_product_5bcf812a752feb5014a2e2f8_1.jpg",name:"Mutton Curry Cut", price:999},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/RjE2ZHoydnVrMDFoVTJ4dTYyNEdiUT09-product_image.jpg",name:" Mutton With Bone", price:799},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/aHpqdTFrUkhCUVdERm1IUENpUVZzUT09-product_image.jpg",name:"Mutton Leg Shoulder", price:1199},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644858423884_product_5bcf812a752feb5014a2e2fa_1.jpg",name:"Mutton Keema(Mince)", price:999},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/YlhMMUx3b1RLUXJyUnFURk95WktVZz09-product_image.jpg",name:"Mutton Biriyani Cut", price:850},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/clZlaC9FemJqY2hTNWtIS1IyM040QT09-product_image.jpg",name:"Mutton Chops", price:779}
+    {
+        name:"Peeled_Garlic",
+        image:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1644844010098_product_5c790174d661476ccea6352e_1.jpg',
+        volume:'500 GMS',
+        price: 105, 
+    },
+
+    {
+        name:"Lemon",
+        image:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/STBGTmtKKzROZWxtLzhqT0c5TTlnUT09-product_image.jpg',
+        volume:'8 PCS',
+        price: 40, 
+    },
 
   ];
 
   let Herbs = [Fresh_Herbs];
   localStorage.setItem('herbs',JSON.stringify(Herbs));
+//   console.log(Herbs)
 
  
-// ____________________________________________________________
+// ________________________________________________________________________________________________________________________________________________________________________________
 
       // ----------------Cuts And Sprouts-------------------------------------------------------------------------------------------------------------------
   
       let  Cuts_And_Sprouts = [
         {
-            name: "Eggs"
+            name: "Sprouts"
         },
 
-        {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1615716379823_product_5bcf812a752feb5014a2e2ba_1.jpg",name:"Eggs", price:72},
-           {url:"https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/VVdxZWI2djBHNFFtTHMrU1pSdjAwUT09-product_image.jpg",name:"Natures Farn Fresh Eggs", price:78},
-           
+        {
+            name:"Brown_Chana_Sprouts",
+            image:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/QkE1UFQyelNZa3FlRWp1Q01oUlkxZz09-product_image.jpg',
+            volume:'1 PACK',
+            price: 39, 
+        },
+
+        {
+            name:"White_Peas_Sprout",
+            image:'https://ik.imagekit.io/dunzo/tr:w-144,h-144,cm-pad_resize/1615633263641_product_5e6f6a51bcbb711dac2f9af0_1.jpg',
+            volume:'1 PACK',
+            price: 20, 
+        },
 
     ];
 
     let Cuts = [ Cuts_And_Sprouts];
     localStorage.setItem('cuts',JSON.stringify(Cuts));
-    console.log(Cuts)
+    // console.log(Cuts)
 
 
-// _________________________________________________________
+// _________________________________________________________________________________________________________________________________________________________________________
 
 
 
@@ -94,9 +211,9 @@ let before_div = 0;
         arr.forEach(function(type) {
         type.forEach(function(products,index) {
         if(index === 0){
-        let h2 = document.createElement('h2');
+        let h2 = document.createElement('h2');   
+        h2.setAttribute("id" , "h2")             // changes here
         h2.innerText = products.name;
-        h2.style.fontWeight = 'bold';
         main_div.append(h2);
 
                     }else{
@@ -110,11 +227,11 @@ let before_div = 0;
                         var button = document.createElement("button");
                         
         // -------------------Adding all products dynamically.------------------------------------
-                        img.src = products.url;
+                        img.src = products.image;
                         name.textContent=products.name;
-                        // quantity.textContent=products.volume;
+                        quantity.textContent=products.volume;
                         price.textContent=`₹ ${products.price}`;
-                        button.innerText="+ADD"
+                        button.innerText="+ADD"             // changes here
                         details.append(name,quantity,price);
                         quantity.setAttribute("class","quantity");
                         name.setAttribute("class","name");
@@ -156,6 +273,8 @@ let before_div = 0;
         let itemsHead = document.getElementById('heading');
         itemsHead.innerText = btn.innerText;
         let data = JSON.parse(localStorage.getItem(id));
+        // console.log("Dat:" , data)
+
 
         if(data == null){
         let main_div = document.getElementById("prds");
@@ -228,7 +347,7 @@ let before_div = 0;
     function displayCartItems() {
     let total_price = 0;
     let main_div = document.getElementById('products3')
-    main_div.style.overflow = 'scroll';
+    // main_div.style.overflow = 'scroll';              // changes here
     let cart = JSON.parse(localStorage.getItem('dCart'));
     console.log(cart);
     
@@ -244,20 +363,29 @@ let before_div = 0;
             cart.forEach(function(prd){
             let li = document.createElement('li');
             li.style.display = 'flex';
-            li.style.marginBottom = '15px'
+            li.style.marginBottom = '25px';
+            // li.style.backgroundColor="red"
 
             let div1 = document.createElement('div');
-            div1.style.width = '40%'
+            // div1.style.width = '40%'                //changes here
+            div1.setAttribute("id" , "div1")         // changes here
+            // div1.style.backgroundColor = "green"
+            
             let h3 = document.createElement('h3');
             h3.innerText = prd.name;
-            h3.style.fontWeight = 'lighter';
+            h3.setAttribute("id" , "H3");           // changes here
+            // h3.style.backgroundColor = "blue"
+            
             let h5 = document.createElement('h5');
+            h5.setAttribute("id" , "H5");            // changes here
+            // h5.style.backgroundColor = "green"
             h5.style.fontWeight = 'lighter';
             h5.innerText = prd.volume;
 
             let div2 = document.createElement('div');
             div2.id = "box";
-            div2.style.width = '15%'
+            // div2.style.width = '15%'              //changes here
+
             let btn1 = document.createElement('button');
             btn1.id = 'minus';
             btn1.addEventListener('click',function(){
@@ -316,6 +444,9 @@ let before_div = 0;
 
                 let div3 = document.createElement('div');
                 div3.style.width = '20%'
+                div3.setAttribute("id" , "div3");
+                // div3.style.backgroundColor= "red"
+
                 let h4 = document.createElement('h4');
                 h4.innerText = '₹'+ prd.price * prd.qty;
 
@@ -333,6 +464,7 @@ let before_div = 0;
                 let checkout_btn = document.createElement('button');
                 checkout_btn.innerText = `checkout ₹${total_price}`;
                 checkout_btn.setAttribute("class","checkout")
+
                 checkout_btn.addEventListener('click',function(){
                     window.location.href = "manage-payment.html";
                 });
@@ -387,22 +519,7 @@ let before_div = 0;
         qty += prd.qty;
         });
 
-        circle.innerText = "qty";
+        circle.innerText = qty;
         }else{
         document.getElementById('circle').style.display = "none";
         }
-        
-
-
-        // seaching
-        function search(){
-            var searchText = document.getElementById("searchBar").value;
-            console.log(searchText)
-             var filterData = Papaya.filter(function(item){
-               return item.name.includes(searchText);
-             });
-             console.log(filterData)
-             displayCartItems(filterData);
-          
-            //  document.getElementById("items").innerText = filterData.length;
-          }
