@@ -433,7 +433,7 @@ document.getElementById("location1").innerHTML=`Groceries & Essentials in ${data
 document.getElementById("cart").addEventListener("click",cart);
 document.getElementById("head").querySelector("p").innerText=`India > ${JSON.parse(localStorage.getItem("location"))}`
 function cart(){
-window.location.href="../pay/pay.html"
+window.location.href="./cart.html"
 }
 
 
