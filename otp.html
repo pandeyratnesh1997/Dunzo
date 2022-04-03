@@ -5,23 +5,27 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
         #main{ 
-            border: 1px solid blue;
-            margin-top: 10%;
             
+            margin-top: 10%;
+            text-align: center;
+            justify-content: center;
           
             
         }
+        #otp {
+            width: 130px;
+            margin: auto;
+        }
         #otp>button{
             display: flex;
-             background-color: teal;
-        width: 130px;
-        height: 30px;
-        color: white;
-        font-size: 17px;
-        margin-left: 30%;
-         cursor: pointer;
+            background-color: teal;
+            width: 130px;
+            height: 30px;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
 
-        text-align: center;
+            text-align: center;
         
         }
         #mobile{
@@ -53,11 +57,11 @@
                     <span onclick="document.getElementById('id01').style.display='none'"
                         class="w3-button w3-display-topright">&times;</span>
                         <div id="main">
-                            <h2>Get and Verify Otp for Payment</h2>
+                            <h2>Get and Verify OTP for Payment</h2>
                             <p>Click below to get 4 digit One Time Password (OTP)
                                 on your Mobile Number +91<span id="mobile"></span> via SMS</p>
                             <div id="otp">
-                                <button>Generate otp</button>
+                                <button>Generate OTP</button>
                             </div>
                         </div>
                     </div>
